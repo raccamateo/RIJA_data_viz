@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2baeb58b90ce5461d997b6c355549b96 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2baeb58b90ce5461d997b6c355549b96" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2baeb58b90ce5461d997b6c355549b96 = L.map(
+                "map_2baeb58b90ce5461d997b6c355549b96",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5bca1a6586b977432658549cd6fdead = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_d5bca1a6586b977432658549cd6fdead.addTo(map_2baeb58b90ce5461d997b6c355549b96);
+        
+    
+            var marker_cluster_7279bff924aa596b49169333e3634fcb = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_7cdff179ca9c4fb38484a943b5bac83c = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_fd283b76dbebb065675ae92d6daef8df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8c16961686f2bed85e0cd6fc26737a7 = $(`<div id="html_c8c16961686f2bed85e0cd6fc26737a7" style="width: 100.0%; height: 100.0%;">Argentina: Participación Ciudadana en el Proceso de Designación de Jueces*</div>`)[0];
+                popup_fd283b76dbebb065675ae92d6daef8df.setContent(html_c8c16961686f2bed85e0cd6fc26737a7);
+            
+        
+
+        circle_marker_7cdff179ca9c4fb38484a943b5bac83c.bindPopup(popup_fd283b76dbebb065675ae92d6daef8df)
+        ;
+
+        
+    
+    
+            var circle_marker_d62155aaa891045d15ce3c95b7874d2c = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_14c81fa5aa567ba5173b4e9e977d72bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44deb93b4941df663a48629f5584cabb = $(`<div id="html_44deb93b4941df663a48629f5584cabb" style="width: 100.0%; height: 100.0%;">Argentina: Introducción (2004) y Regulación (2013) del Recurso Amicus Curiae o Amigos del Tribunal*</div>`)[0];
+                popup_14c81fa5aa567ba5173b4e9e977d72bf.setContent(html_44deb93b4941df663a48629f5584cabb);
+            
+        
+
+        circle_marker_d62155aaa891045d15ce3c95b7874d2c.bindPopup(popup_14c81fa5aa567ba5173b4e9e977d72bf)
+        ;
+
+        
+    
+    
+            var circle_marker_e6920bc24387567af749e944ddc659ed = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_0d51014bbd557706f6431f4b4be0f831 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d7e09a80ee98b62512b5a3ebbe293a3 = $(`<div id="html_3d7e09a80ee98b62512b5a3ebbe293a3" style="width: 100.0%; height: 100.0%;">Argentina: Audiencias Públicas</div>`)[0];
+                popup_0d51014bbd557706f6431f4b4be0f831.setContent(html_3d7e09a80ee98b62512b5a3ebbe293a3);
+            
+        
+
+        circle_marker_e6920bc24387567af749e944ddc659ed.bindPopup(popup_0d51014bbd557706f6431f4b4be0f831)
+        ;
+
+        
+    
+    
+            var circle_marker_257d67b1ecafe8f5a1e323f1a194a326 = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_48da6c3fd24a6c4fbd930102b1332ffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d742d16c474ce4b2a350de7ecfc64af2 = $(`<div id="html_d742d16c474ce4b2a350de7ecfc64af2" style="width: 100.0%; height: 100.0%;">Argentina: Publicación de Sentencias y Resoluciones</div>`)[0];
+                popup_48da6c3fd24a6c4fbd930102b1332ffc.setContent(html_d742d16c474ce4b2a350de7ecfc64af2);
+            
+        
+
+        circle_marker_257d67b1ecafe8f5a1e323f1a194a326.bindPopup(popup_48da6c3fd24a6c4fbd930102b1332ffc)
+        ;
+
+        
+    
+    
+            var circle_marker_98d0f313b9322ae8d90345d2e5ea62fa = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_6d4d51335b0d42c06b4a756b6fa1d233 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_079e70b9a4f881a08287537fd2a63cd3 = $(`<div id="html_079e70b9a4f881a08287537fd2a63cd3" style="width: 100.0%; height: 100.0%;">Costa Rica: Fortalecimiento de Comisiones de Personas Usuarias*</div>`)[0];
+                popup_6d4d51335b0d42c06b4a756b6fa1d233.setContent(html_079e70b9a4f881a08287537fd2a63cd3);
+            
+        
+
+        circle_marker_98d0f313b9322ae8d90345d2e5ea62fa.bindPopup(popup_6d4d51335b0d42c06b4a756b6fa1d233)
+        ;
+
+        
+    
+    
+            var circle_marker_5aec610ab9f155bf08b8c0aa5232923d = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_8088a63f1d08f5da1e9f6adb18f699ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1a2ea64c57a363c55e8ab9272fd3bb0 = $(`<div id="html_e1a2ea64c57a363c55e8ab9272fd3bb0" style="width: 100.0%; height: 100.0%;">Costa Rica: Poder Juvenil</div>`)[0];
+                popup_8088a63f1d08f5da1e9f6adb18f699ec.setContent(html_e1a2ea64c57a363c55e8ab9272fd3bb0);
+            
+        
+
+        circle_marker_5aec610ab9f155bf08b8c0aa5232923d.bindPopup(popup_8088a63f1d08f5da1e9f6adb18f699ec)
+        ;
+
+        
+    
+    
+            var circle_marker_9469b947f1d25f2d087c510aaa60f06a = L.circleMarker(
+                [-16.2902, -63.5887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_aa709eec965c252e82ca0dd57d869711 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0d36a29c2b500f1a3fb3bf65a2785da = $(`<div id="html_b0d36a29c2b500f1a3fb3bf65a2785da" style="width: 100.0%; height: 100.0%;">Bolivia: Plan Nacional de Descongestionamiento del Sistema Penal</div>`)[0];
+                popup_aa709eec965c252e82ca0dd57d869711.setContent(html_b0d36a29c2b500f1a3fb3bf65a2785da);
+            
+        
+
+        circle_marker_9469b947f1d25f2d087c510aaa60f06a.bindPopup(popup_aa709eec965c252e82ca0dd57d869711)
+        ;
+
+        
+    
+    
+            var circle_marker_dce9c193d42dcb25b77634122564d00f = L.circleMarker(
+                [-16.2902, -63.5887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_d0684168cf210692bcf6e738fd31298e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de5383607d5e4304de3997e39045988d = $(`<div id="html_de5383607d5e4304de3997e39045988d" style="width: 100.0%; height: 100.0%;">Bolivia: Visitas Carcelarias*</div>`)[0];
+                popup_d0684168cf210692bcf6e738fd31298e.setContent(html_de5383607d5e4304de3997e39045988d);
+            
+        
+
+        circle_marker_dce9c193d42dcb25b77634122564d00f.bindPopup(popup_d0684168cf210692bcf6e738fd31298e)
+        ;
+
+        
+    
+    
+            var circle_marker_7ba10ac1f4b117519e3055c81a1ddf9f = L.circleMarker(
+                [-16.2902, -63.5887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_a7a3709ace538750c6c76c58a8439084 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adafeb3fc6457e21543883c259e5fcae = $(`<div id="html_adafeb3fc6457e21543883c259e5fcae" style="width: 100.0%; height: 100.0%;">Bolivia: Participación en Ferias y Exposición</div>`)[0];
+                popup_a7a3709ace538750c6c76c58a8439084.setContent(html_adafeb3fc6457e21543883c259e5fcae);
+            
+        
+
+        circle_marker_7ba10ac1f4b117519e3055c81a1ddf9f.bindPopup(popup_a7a3709ace538750c6c76c58a8439084)
+        ;
+
+        
+    
+    
+            var circle_marker_41a0017d388b27a636cfd1fa3ab8d9be = L.circleMarker(
+                [-16.2902, -63.5887],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_33c5c0c54284d3a3a3aa7d33824be0f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbd8e09955f59b19248ab62559572001 = $(`<div id="html_dbd8e09955f59b19248ab62559572001" style="width: 100.0%; height: 100.0%;">Bolivia: Capacitaciones Abiertas y Talleres*</div>`)[0];
+                popup_33c5c0c54284d3a3a3aa7d33824be0f2.setContent(html_dbd8e09955f59b19248ab62559572001);
+            
+        
+
+        circle_marker_41a0017d388b27a636cfd1fa3ab8d9be.bindPopup(popup_33c5c0c54284d3a3a3aa7d33824be0f2)
+        ;
+
+        
+    
+    
+            var circle_marker_5df40ae4158a99fe08d5310e15749dec = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_35590f092b9e32bfa98fe887aca2adf1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1f6aa0892abd3e9f8e255110c04dbeb = $(`<div id="html_a1f6aa0892abd3e9f8e255110c04dbeb" style="width: 100.0%; height: 100.0%;">Brasil: Audiencias Públicas</div>`)[0];
+                popup_35590f092b9e32bfa98fe887aca2adf1.setContent(html_a1f6aa0892abd3e9f8e255110c04dbeb);
+            
+        
+
+        circle_marker_5df40ae4158a99fe08d5310e15749dec.bindPopup(popup_35590f092b9e32bfa98fe887aca2adf1)
+        ;
+
+        
+    
+    
+            var circle_marker_51a5b2704f341f647871f4cd7fffbe02 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_e562a489325c0a78247f49472528df95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_932f52fa10f26561bdec17b4e89de8ca = $(`<div id="html_932f52fa10f26561bdec17b4e89de8ca" style="width: 100.0%; height: 100.0%;">Brasil: Servicio de Información Ciudadana</div>`)[0];
+                popup_e562a489325c0a78247f49472528df95.setContent(html_932f52fa10f26561bdec17b4e89de8ca);
+            
+        
+
+        circle_marker_51a5b2704f341f647871f4cd7fffbe02.bindPopup(popup_e562a489325c0a78247f49472528df95)
+        ;
+
+        
+    
+    
+            var circle_marker_104b717b77d32e05e8dbdf3b7f51cf90 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_8196c8c03f04257057ef1c408557e558 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de0f739589d9763a748ed1318bc5eff4 = $(`<div id="html_de0f739589d9763a748ed1318bc5eff4" style="width: 100.0%; height: 100.0%;">Brasil: Programa de Justicia Restaurativa en Escuelas</div>`)[0];
+                popup_8196c8c03f04257057ef1c408557e558.setContent(html_de0f739589d9763a748ed1318bc5eff4);
+            
+        
+
+        circle_marker_104b717b77d32e05e8dbdf3b7f51cf90.bindPopup(popup_8196c8c03f04257057ef1c408557e558)
+        ;
+
+        
+    
+    
+            var circle_marker_7ab44023ee90ef217fc24237531fe4bd = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_9feeaf9be3645e8de26cf3cfc86b950e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea86d8e4e5eec7d6d2ed47195210cb63 = $(`<div id="html_ea86d8e4e5eec7d6d2ed47195210cb63" style="width: 100.0%; height: 100.0%;">Brasil: Establecimiento del Laboratorio de Innovación y Objetivos de Desarrollo Sostenible*</div>`)[0];
+                popup_9feeaf9be3645e8de26cf3cfc86b950e.setContent(html_ea86d8e4e5eec7d6d2ed47195210cb63);
+            
+        
+
+        circle_marker_7ab44023ee90ef217fc24237531fe4bd.bindPopup(popup_9feeaf9be3645e8de26cf3cfc86b950e)
+        ;
+
+        
+    
+    
+            var circle_marker_9958defb80bf585a6f0a16e2deee3270 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_60addd330cdcdf4f23efd5d28e38211a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f2b86e63d2dda99044e9065da4d0ac9 = $(`<div id="html_0f2b86e63d2dda99044e9065da4d0ac9" style="width: 100.0%; height: 100.0%;">Brasil: 1er Hackatón LIODS/CNJ**</div>`)[0];
+                popup_60addd330cdcdf4f23efd5d28e38211a.setContent(html_0f2b86e63d2dda99044e9065da4d0ac9);
+            
+        
+
+        circle_marker_9958defb80bf585a6f0a16e2deee3270.bindPopup(popup_60addd330cdcdf4f23efd5d28e38211a)
+        ;
+
+        
+    
+    
+            var circle_marker_7ce0d9d62762ae6e8129734ea8b5f657 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_68d4c76a4790045918f7c992208623a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11185bdecf82b3381619f16bc95a002e = $(`<div id="html_11185bdecf82b3381619f16bc95a002e" style="width: 100.0%; height: 100.0%;">Brasil: Tribunal Indígena Itinerante</div>`)[0];
+                popup_68d4c76a4790045918f7c992208623a5.setContent(html_11185bdecf82b3381619f16bc95a002e);
+            
+        
+
+        circle_marker_7ce0d9d62762ae6e8129734ea8b5f657.bindPopup(popup_68d4c76a4790045918f7c992208623a5)
+        ;
+
+        
+    
+    
+            var circle_marker_b1d2924319f3e65a9efc0627aa4bb4c3 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_d5732270a7f67b4a4879e991d7b3ee4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f5706968a54a4a80b21345204374268 = $(`<div id="html_4f5706968a54a4a80b21345204374268" style="width: 100.0%; height: 100.0%;">Brasil: Educación a Distancia | Cursos y Capacitaciones</div>`)[0];
+                popup_d5732270a7f67b4a4879e991d7b3ee4c.setContent(html_4f5706968a54a4a80b21345204374268);
+            
+        
+
+        circle_marker_b1d2924319f3e65a9efc0627aa4bb4c3.bindPopup(popup_d5732270a7f67b4a4879e991d7b3ee4c)
+        ;
+
+        
+    
+    
+            var circle_marker_c20181d3f31c7cbf8163addc1a8ba535 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_1872165e6809c5ce0dbb26684694551b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a43a6f2e12a7f00d2072be92520e8fed = $(`<div id="html_a43a6f2e12a7f00d2072be92520e8fed" style="width: 100.0%; height: 100.0%;">Brasil:  Política Nacional de Atención a Personas en Calle y sus Interseccionalidades</div>`)[0];
+                popup_1872165e6809c5ce0dbb26684694551b.setContent(html_a43a6f2e12a7f00d2072be92520e8fed);
+            
+        
+
+        circle_marker_c20181d3f31c7cbf8163addc1a8ba535.bindPopup(popup_1872165e6809c5ce0dbb26684694551b)
+        ;
+
+        
+    
+    
+            var circle_marker_46cdb99d2778bb44aaaef7618651a13c = L.circleMarker(
+                [-25.2744, 133.7751],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_7b1da21eacc7eb2cf3b4528e34a80f19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2dd4a4bee661810651e1a84ad4d11a8 = $(`<div id="html_d2dd4a4bee661810651e1a84ad4d11a8" style="width: 100.0%; height: 100.0%;">Australia: Programa de Educación al Público y Visitantes (Public Education and Visitor Programmes)</div>`)[0];
+                popup_7b1da21eacc7eb2cf3b4528e34a80f19.setContent(html_d2dd4a4bee661810651e1a84ad4d11a8);
+            
+        
+
+        circle_marker_46cdb99d2778bb44aaaef7618651a13c.bindPopup(popup_7b1da21eacc7eb2cf3b4528e34a80f19)
+        ;
+
+        
+    
+    
+            var circle_marker_b5cc113e67599252d12fce5cbf304cfd = L.circleMarker(
+                [-25.2744, 133.7751],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_0d956ff12992a7c39a1a67aafab995cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22f5518bafb0badbcbb6876c68ef807f = $(`<div id="html_22f5518bafb0badbcbb6876c68ef807f" style="width: 100.0%; height: 100.0%;">Australia: Procedimiento de Reclamos Judiciales (Judicial Complaints Procedure)</div>`)[0];
+                popup_0d956ff12992a7c39a1a67aafab995cc.setContent(html_22f5518bafb0badbcbb6876c68ef807f);
+            
+        
+
+        circle_marker_b5cc113e67599252d12fce5cbf304cfd.bindPopup(popup_0d956ff12992a7c39a1a67aafab995cc)
+        ;
+
+        
+    
+    
+            var circle_marker_2c87d121307550ca6ac18585cb90a3cc = L.circleMarker(
+                [-25.2744, 133.7751],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_ea4a2d58c889aac21fb88aa2ebd639b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29fa9f5c410c8ebe98ff190fc9ca869c = $(`<div id="html_29fa9f5c410c8ebe98ff190fc9ca869c" style="width: 100.0%; height: 100.0%;">Australia: Comprisos en el Marco del Acuerdo Nacional para Cerrar Brechas (National Agreement on Closing the Gap)*</div>`)[0];
+                popup_ea4a2d58c889aac21fb88aa2ebd639b1.setContent(html_29fa9f5c410c8ebe98ff190fc9ca869c);
+            
+        
+
+        circle_marker_2c87d121307550ca6ac18585cb90a3cc.bindPopup(popup_ea4a2d58c889aac21fb88aa2ebd639b1)
+        ;
+
+        
+    
+    
+            var circle_marker_914df3e88327a98629f2c3ff6adce382 = L.circleMarker(
+                [-30.5595, 22.9375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_5c16543dd91ced0338c0a60f0f64a7f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d90c41668f2f3cfc28c67d4c6f37b022 = $(`<div id="html_d90c41668f2f3cfc28c67d4c6f37b022" style="width: 100.0%; height: 100.0%;">Sudáfrica: Iniciativas de Asisitentes (Clerk Initiatives)</div>`)[0];
+                popup_5c16543dd91ced0338c0a60f0f64a7f0.setContent(html_d90c41668f2f3cfc28c67d4c6f37b022);
+            
+        
+
+        circle_marker_914df3e88327a98629f2c3ff6adce382.bindPopup(popup_5c16543dd91ced0338c0a60f0f64a7f0)
+        ;
+
+        
+    
+    
+            var circle_marker_db35256180e05f2534008264bc29534f = L.circleMarker(
+                [-30.5595, 22.9375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_24405eb835e8a246123ea6940c9bf9c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbc96cc116a6941840a7dc48298c07ad = $(`<div id="html_dbc96cc116a6941840a7dc48298c07ad" style="width: 100.0%; height: 100.0%;">Sudáfrica: Participación Ciudadana en el Proceso de Designación de Jueces*</div>`)[0];
+                popup_24405eb835e8a246123ea6940c9bf9c5.setContent(html_dbc96cc116a6941840a7dc48298c07ad);
+            
+        
+
+        circle_marker_db35256180e05f2534008264bc29534f.bindPopup(popup_24405eb835e8a246123ea6940c9bf9c5)
+        ;
+
+        
+    
+    
+            var circle_marker_4b76f4602c34b92327e8e54aed1e2435 = L.circleMarker(
+                [-30.5595, 22.9375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_a881252d8d1385bb9e15d0de61898c4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4495b48d8d7d9c27de6e848365f77dc3 = $(`<div id="html_4495b48d8d7d9c27de6e848365f77dc3" style="width: 100.0%; height: 100.0%;">Sudáfrica: Comité de Integridad del Orden de las Cortes (Court Order Integrity Committee)</div>`)[0];
+                popup_a881252d8d1385bb9e15d0de61898c4f.setContent(html_4495b48d8d7d9c27de6e848365f77dc3);
+            
+        
+
+        circle_marker_4b76f4602c34b92327e8e54aed1e2435.bindPopup(popup_a881252d8d1385bb9e15d0de61898c4f)
+        ;
+
+        
+    
+    
+            var circle_marker_2184f36be7b4dda1ffddf5276b8d431d = L.circleMarker(
+                [-30.5595, 22.9375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_5cc938acacfea8570caa1b0c55ec4eed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_becbd6c7ee929b26d6bcbb91ae7aa29a = $(`<div id="html_becbd6c7ee929b26d6bcbb91ae7aa29a" style="width: 100.0%; height: 100.0%;">Sudáfrica: Evaluación e Indicadores del Rendimiento de la Corte (Court Performance and Court Performance Indicators)</div>`)[0];
+                popup_5cc938acacfea8570caa1b0c55ec4eed.setContent(html_becbd6c7ee929b26d6bcbb91ae7aa29a);
+            
+        
+
+        circle_marker_2184f36be7b4dda1ffddf5276b8d431d.bindPopup(popup_5cc938acacfea8570caa1b0c55ec4eed)
+        ;
+
+        
+    
+    
+            var circle_marker_2b160eaba8be15ddcf0ec33bb652ca22 = L.circleMarker(
+                [-30.5595, 22.9375],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_11ea11de8705cd5b4b8d85eea55a2354 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d29e5279327ec3b2d4fb1f57214cd40f = $(`<div id="html_d29e5279327ec3b2d4fb1f57214cd40f" style="width: 100.0%; height: 100.0%;">Sudáfrica: Judges Matter*</div>`)[0];
+                popup_11ea11de8705cd5b4b8d85eea55a2354.setContent(html_d29e5279327ec3b2d4fb1f57214cd40f);
+            
+        
+
+        circle_marker_2b160eaba8be15ddcf0ec33bb652ca22.bindPopup(popup_11ea11de8705cd5b4b8d85eea55a2354)
+        ;
+
+        
+    
+    
+            var circle_marker_d0a08a7c992b1eb950618616d395dd03 = L.circleMarker(
+                [-0.0236, 37.9062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_17550a00494440dffd5dcd1a6d44529c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b0ab94790885b0ce9af70e6991c7976 = $(`<div id="html_2b0ab94790885b0ce9af70e6991c7976" style="width: 100.0%; height: 100.0%;">Kenya: Comités de Usuarios de la Corte (Court User Committees)*</div>`)[0];
+                popup_17550a00494440dffd5dcd1a6d44529c.setContent(html_2b0ab94790885b0ce9af70e6991c7976);
+            
+        
+
+        circle_marker_d0a08a7c992b1eb950618616d395dd03.bindPopup(popup_17550a00494440dffd5dcd1a6d44529c)
+        ;
+
+        
+    
+    
+            var circle_marker_de06b3472badf228c73ee4e558316b88 = L.circleMarker(
+                [-6.369, 34.8888],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_63fa412f94d77ef797065771bcfafbb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0dfba5ad874ebcb6b94bb3e893fd491 = $(`<div id="html_b0dfba5ad874ebcb6b94bb3e893fd491" style="width: 100.0%; height: 100.0%;">Tanzania: Comités de Usuarios de la Corte (Court User Committees)</div>`)[0];
+                popup_63fa412f94d77ef797065771bcfafbb6.setContent(html_b0dfba5ad874ebcb6b94bb3e893fd491);
+            
+        
+
+        circle_marker_de06b3472badf228c73ee4e558316b88.bindPopup(popup_63fa412f94d77ef797065771bcfafbb6)
+        ;
+
+        
+    
+    
+            var circle_marker_4e24fc69962a5ae25a807ca818d74c47 = L.circleMarker(
+                [1.3733, 32.2903],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_18bedb2f5c7241c9e8cc2385d026cb26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5f8c3fdbf6b5fa38237c38b21fc85ab = $(`<div id="html_d5f8c3fdbf6b5fa38237c38b21fc85ab" style="width: 100.0%; height: 100.0%;">Uganda: Comités de Usuarios de la Corte (Court User Committees)</div>`)[0];
+                popup_18bedb2f5c7241c9e8cc2385d026cb26.setContent(html_d5f8c3fdbf6b5fa38237c38b21fc85ab);
+            
+        
+
+        circle_marker_4e24fc69962a5ae25a807ca818d74c47.bindPopup(popup_18bedb2f5c7241c9e8cc2385d026cb26)
+        ;
+
+        
+    
+    
+            var circle_marker_87c624ecaef05f00c3ab68c2fac352ad = L.circleMarker(
+                [7.9465, -1.0232],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_cead8c7b6473ebf9a0fa8983a8c52d16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e8a88c08f4d45ebe698f1ce9bada0b5 = $(`<div id="html_2e8a88c08f4d45ebe698f1ce9bada0b5" style="width: 100.0%; height: 100.0%;">Ghana: Comités de Usuarios de la Corte (Court User Committees)</div>`)[0];
+                popup_cead8c7b6473ebf9a0fa8983a8c52d16.setContent(html_2e8a88c08f4d45ebe698f1ce9bada0b5);
+            
+        
+
+        circle_marker_87c624ecaef05f00c3ab68c2fac352ad.bindPopup(popup_cead8c7b6473ebf9a0fa8983a8c52d16)
+        ;
+
+        
+    
+    
+            var circle_marker_0058a8c78fe43b33eefc82e3303b8810 = L.circleMarker(
+                [9.082, 8.6753],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_0ab0a00d20921a5c1332d00489e07ad1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb2f2fe1b64bdfdc7fdb1b646c4c78cc = $(`<div id="html_eb2f2fe1b64bdfdc7fdb1b646c4c78cc" style="width: 100.0%; height: 100.0%;">Nigeria: Comités de Usuarios de la Corte (Court User Committees)**</div>`)[0];
+                popup_0ab0a00d20921a5c1332d00489e07ad1.setContent(html_eb2f2fe1b64bdfdc7fdb1b646c4c78cc);
+            
+        
+
+        circle_marker_0058a8c78fe43b33eefc82e3303b8810.bindPopup(popup_0ab0a00d20921a5c1332d00489e07ad1)
+        ;
+
+        
+    
+    
+            var circle_marker_c46091cda85460190f3984d85856fa99 = L.circleMarker(
+                [6.4281, -9.4295],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_2fe240f25b7435cb41dde762e6b36a23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b8efd94a6a45d5ca2e4b91f49eb7e3f = $(`<div id="html_7b8efd94a6a45d5ca2e4b91f49eb7e3f" style="width: 100.0%; height: 100.0%;">Liberia: Manual para Usuarios de las Cortes</div>`)[0];
+                popup_2fe240f25b7435cb41dde762e6b36a23.setContent(html_7b8efd94a6a45d5ca2e4b91f49eb7e3f);
+            
+        
+
+        circle_marker_c46091cda85460190f3984d85856fa99.bindPopup(popup_2fe240f25b7435cb41dde762e6b36a23)
+        ;
+
+        
+    
+    
+            var circle_marker_ea930041f46176182bb6b8b494421890 = L.circleMarker(
+                [18.1096, -77.2975],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_005699b058ff14fd4a76eaaaafd5cea5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2afaab8ae01d663fd74c2365503bbf4b = $(`<div id="html_2afaab8ae01d663fd74c2365503bbf4b" style="width: 100.0%; height: 100.0%;">Jamaica: Justice Undertakings for Social Transformation (JUST) Project | SCO Participation in Judicial Modernization and Reform*</div>`)[0];
+                popup_005699b058ff14fd4a76eaaaafd5cea5.setContent(html_2afaab8ae01d663fd74c2365503bbf4b);
+            
+        
+
+        circle_marker_ea930041f46176182bb6b8b494421890.bindPopup(popup_005699b058ff14fd4a76eaaaafd5cea5)
+        ;
+
+        
+    
+    
+            var circle_marker_d1245adf1adb38f53a4d391ca0b4d0ee = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_1df8530511d8b0fee332756b2151f52f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_907e1184d8f51d8be2dae5ba7cf82476 = $(`<div id="html_907e1184d8f51d8be2dae5ba7cf82476" style="width: 100.0%; height: 100.0%;">Costa Rica: Política de Participación Ciudadana en el Poder Judicial de Costa Rica*</div>`)[0];
+                popup_1df8530511d8b0fee332756b2151f52f.setContent(html_907e1184d8f51d8be2dae5ba7cf82476);
+            
+        
+
+        circle_marker_d1245adf1adb38f53a4d391ca0b4d0ee.bindPopup(popup_1df8530511d8b0fee332756b2151f52f)
+        ;
+
+        
+    
+    
+            var circle_marker_0f0973e413be19685d035ed26edb23d8 = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_4352cb0b8b1742e2bfc9508de9f6c835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74a1c08a3e1861ac30757b7dec209c44 = $(`<div id="html_74a1c08a3e1861ac30757b7dec209c44" style="width: 100.0%; height: 100.0%;">Costa Rica: Política de Comunicación Participativa (Co-Creación)*</div>`)[0];
+                popup_4352cb0b8b1742e2bfc9508de9f6c835.setContent(html_74a1c08a3e1861ac30757b7dec209c44);
+            
+        
+
+        circle_marker_0f0973e413be19685d035ed26edb23d8.bindPopup(popup_4352cb0b8b1742e2bfc9508de9f6c835)
+        ;
+
+        
+    
+    
+            var circle_marker_800f71c0cb5c2910784c0ec53c5cf3fa = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_7b2cb904bc96426945b3b71fec422527 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9484f7a48adc3cd90f018b408a7bee35 = $(`<div id="html_9484f7a48adc3cd90f018b408a7bee35" style="width: 100.0%; height: 100.0%;">Argentina: JusBaires Abierto | Participación Ciudadana - Innovación e Incidencia (INNOVA)*</div>`)[0];
+                popup_7b2cb904bc96426945b3b71fec422527.setContent(html_9484f7a48adc3cd90f018b408a7bee35);
+            
+        
+
+        circle_marker_800f71c0cb5c2910784c0ec53c5cf3fa.bindPopup(popup_7b2cb904bc96426945b3b71fec422527)
+        ;
+
+        
+    
+    
+            var circle_marker_ba48b1f960c7647cee458409ef9430d3 = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_4f0523df37cbe99e21768e4a560b175b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c3ba93c20928cf8c0d9a4ec475da53a = $(`<div id="html_1c3ba93c20928cf8c0d9a4ec475da53a" style="width: 100.0%; height: 100.0%;">Argentina: JusBaires Abierto | Participación Ciudadana - Programa Protagonistas de Justicia (ProJus)*</div>`)[0];
+                popup_4f0523df37cbe99e21768e4a560b175b.setContent(html_1c3ba93c20928cf8c0d9a4ec475da53a);
+            
+        
+
+        circle_marker_ba48b1f960c7647cee458409ef9430d3.bindPopup(popup_4f0523df37cbe99e21768e4a560b175b)
+        ;
+
+        
+    
+    
+            var circle_marker_805cdd8667f47d238c5c339c455ed3ae = L.circleMarker(
+                [4.5709, -74.2973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_17726323a3de577b3f8fb496b2812c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ae2e1692e12133d16cd531de40412c5 = $(`<div id="html_5ae2e1692e12133d16cd531de40412c5" style="width: 100.0%; height: 100.0%;">Colombia: Corporación Excelencia en la Justicia (CEJ) | Elección Transparente</div>`)[0];
+                popup_17726323a3de577b3f8fb496b2812c70.setContent(html_5ae2e1692e12133d16cd531de40412c5);
+            
+        
+
+        circle_marker_805cdd8667f47d238c5c339c455ed3ae.bindPopup(popup_17726323a3de577b3f8fb496b2812c70)
+        ;
+
+        
+    
+    
+            var circle_marker_5a82e48d1b6e23ef13f33c1a5835ade9 = L.circleMarker(
+                [18.2208, -66.5901],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_8250851b6f1ca8ea99dd10a50117c2f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36b9e48d79ca11753b89d34dab95583f = $(`<div id="html_36b9e48d79ca11753b89d34dab95583f" style="width: 100.0%; height: 100.0%;">Puerto Rico: Comisión Futurista de los Tribunales*</div>`)[0];
+                popup_8250851b6f1ca8ea99dd10a50117c2f1.setContent(html_36b9e48d79ca11753b89d34dab95583f);
+            
+        
+
+        circle_marker_5a82e48d1b6e23ef13f33c1a5835ade9.bindPopup(popup_8250851b6f1ca8ea99dd10a50117c2f1)
+        ;
+
+        
+    
+    
+            var circle_marker_c1ed213c599db7a1f702f31b47f977c9 = L.circleMarker(
+                [18.7357, -70.1627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_66966e43060a35cfbccdbfa7f83d8f58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_812e24606638abda0303826e87033aa4 = $(`<div id="html_812e24606638abda0303826e87033aa4" style="width: 100.0%; height: 100.0%;">República Dominicana: Plan Estratégico Institucional Visión Justicia 20/24*</div>`)[0];
+                popup_66966e43060a35cfbccdbfa7f83d8f58.setContent(html_812e24606638abda0303826e87033aa4);
+            
+        
+
+        circle_marker_c1ed213c599db7a1f702f31b47f977c9.bindPopup(popup_66966e43060a35cfbccdbfa7f83d8f58)
+        ;
+
+        
+    
+    
+            var circle_marker_7ae6b88da534e56c3220ed7182b39709 = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_00efbef4a5dd5eb6eddea9e83ef6c888 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16b790d2f9b2619585f701ad9e445b3d = $(`<div id="html_16b790d2f9b2619585f701ad9e445b3d" style="width: 100.0%; height: 100.0%;">Costa Rica: Plan Estratégico Institucional 2019-2024 del PoderJudicial de Costa Rica*</div>`)[0];
+                popup_00efbef4a5dd5eb6eddea9e83ef6c888.setContent(html_16b790d2f9b2619585f701ad9e445b3d);
+            
+        
+
+        circle_marker_7ae6b88da534e56c3220ed7182b39709.bindPopup(popup_00efbef4a5dd5eb6eddea9e83ef6c888)
+        ;
+
+        
+    
+    
+            var circle_marker_04cc5f6cf6ebc02e1d116ac9ef70c22f = L.circleMarker(
+                [42.6026, 20.9029],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_37886bf4e4f74d6599f2c480a74f46bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76237b89989559f1dc3a177c066261d0 = $(`<div id="html_76237b89989559f1dc3a177c066261d0" style="width: 100.0%; height: 100.0%;">Kosovo: Increasing Citizens’ Awareness and Participation in the Justice System*</div>`)[0];
+                popup_37886bf4e4f74d6599f2c480a74f46bd.setContent(html_76237b89989559f1dc3a177c066261d0);
+            
+        
+
+        circle_marker_04cc5f6cf6ebc02e1d116ac9ef70c22f.bindPopup(popup_37886bf4e4f74d6599f2c480a74f46bd)
+        ;
+
+        
+    
+    
+            var circle_marker_0be58fcd2d50857937562f4ad3fcb82e = L.circleMarker(
+                [18.7357, -70.1627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_cfa78fc3381352312eaa5e9cbf467d39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0203ad35430afae636e380fe603c17f8 = $(`<div id="html_0203ad35430afae636e380fe603c17f8" style="width: 100.0%; height: 100.0%;">República Dominicana: Consultas Públicas + Consultas Abiertas**</div>`)[0];
+                popup_cfa78fc3381352312eaa5e9cbf467d39.setContent(html_0203ad35430afae636e380fe603c17f8);
+            
+        
+
+        circle_marker_0be58fcd2d50857937562f4ad3fcb82e.bindPopup(popup_cfa78fc3381352312eaa5e9cbf467d39)
+        ;
+
+        
+    
+    
+            var circle_marker_e1057e8083b985976463e8e476d18944 = L.circleMarker(
+                [23.685, 90.3563],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_e4557a2774ade98496f099d335321a8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9acecc1a050f72c8271805aba33df997 = $(`<div id="html_9acecc1a050f72c8271805aba33df997" style="width: 100.0%; height: 100.0%;">Bangladesh: Hackatón | Acceso de los Trabajadores a la Justicia</div>`)[0];
+                popup_e4557a2774ade98496f099d335321a8c.setContent(html_9acecc1a050f72c8271805aba33df997);
+            
+        
+
+        circle_marker_e1057e8083b985976463e8e476d18944.bindPopup(popup_e4557a2774ade98496f099d335321a8c)
+        ;
+
+        
+    
+    
+            var circle_marker_eac020b392ecf6cdd46bbb6e2df55b54 = L.circleMarker(
+                [-23.4425, -58.4438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_6654b06efc5f37c090101685adef6768 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05f802d6e59cbf2819ee5b9d9ef207d4 = $(`<div id="html_05f802d6e59cbf2819ee5b9d9ef207d4" style="width: 100.0%; height: 100.0%;">Paraguay: Hackathon 2015 | 2° Edición*</div>`)[0];
+                popup_6654b06efc5f37c090101685adef6768.setContent(html_05f802d6e59cbf2819ee5b9d9ef207d4);
+            
+        
+
+        circle_marker_eac020b392ecf6cdd46bbb6e2df55b54.bindPopup(popup_6654b06efc5f37c090101685adef6768)
+        ;
+
+        
+    
+    
+            var circle_marker_be3b6bbdfc046505c82a610a2b03da84 = L.circleMarker(
+                [-0.0236, 37.9062],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_8633e9a7d42474da1c3935fa8af2443f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_895a00e637a76bf6dfb83d5f6199053a = $(`<div id="html_895a00e637a76bf6dfb83d5f6199053a" style="width: 100.0%; height: 100.0%;">Kenya: Participación Ciudadana en el Proceso de Designación de Jueces*</div>`)[0];
+                popup_8633e9a7d42474da1c3935fa8af2443f.setContent(html_895a00e637a76bf6dfb83d5f6199053a);
+            
+        
+
+        circle_marker_be3b6bbdfc046505c82a610a2b03da84.bindPopup(popup_8633e9a7d42474da1c3935fa8af2443f)
+        ;
+
+        
+    
+    
+            var circle_marker_2df127177dfd828faebb88f023ed37f5 = L.circleMarker(
+                [36.2048, 138.2529],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_5aa94ac9713b0fee2c167fd7e0d48c23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b15ff1b846ba8cd0468000f504002f7 = $(`<div id="html_3b15ff1b846ba8cd0468000f504002f7" style="width: 100.0%; height: 100.0%;">Japón: Participación Ciudadana en el Proceso de Designación de Jueces**</div>`)[0];
+                popup_5aa94ac9713b0fee2c167fd7e0d48c23.setContent(html_3b15ff1b846ba8cd0468000f504002f7);
+            
+        
+
+        circle_marker_2df127177dfd828faebb88f023ed37f5.bindPopup(popup_5aa94ac9713b0fee2c167fd7e0d48c23)
+        ;
+
+        
+    
+    
+            var circle_marker_f6efa7bfcb0a3cf065b1140fe34076e5 = L.circleMarker(
+                [18.7357, -70.1627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_fdabcfcd365dc95aa0828ce92102a4fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e779da8b2fa1d079a6925c71e339894 = $(`<div id="html_4e779da8b2fa1d079a6925c71e339894" style="width: 100.0%; height: 100.0%;">República Dominicana: Lab de Innovación para la Justicia de la Escuela Nacional de la Judicatura de la República Dominicana*</div>`)[0];
+                popup_fdabcfcd365dc95aa0828ce92102a4fa.setContent(html_4e779da8b2fa1d079a6925c71e339894);
+            
+        
+
+        circle_marker_f6efa7bfcb0a3cf065b1140fe34076e5.bindPopup(popup_fdabcfcd365dc95aa0828ce92102a4fa)
+        ;
+
+        
+    
+    
+            var circle_marker_1e99febaa511e24fab0d6acd05a23e1d = L.circleMarker(
+                [18.7357, -70.1627],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_60a0d5c02c4e83ae04bcfe66386f909e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3afbcfafda60cba54db3868146a0e64 = $(`<div id="html_a3afbcfafda60cba54db3868146a0e64" style="width: 100.0%; height: 100.0%;">República Dominicana: Hackathon Visión Justicia - Lab ENJ*</div>`)[0];
+                popup_60a0d5c02c4e83ae04bcfe66386f909e.setContent(html_a3afbcfafda60cba54db3868146a0e64);
+            
+        
+
+        circle_marker_1e99febaa511e24fab0d6acd05a23e1d.bindPopup(popup_60a0d5c02c4e83ae04bcfe66386f909e)
+        ;
+
+        
+    
+    
+            var circle_marker_f618dbfc03401bd4c518e05ae52a5662 = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_12973550ded36a09bf4d953b992371ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d631631ae44a17123c2e96f4231ee23 = $(`<div id="html_0d631631ae44a17123c2e96f4231ee23" style="width: 100.0%; height: 100.0%;">Argentina: Hackathon JusLab*</div>`)[0];
+                popup_12973550ded36a09bf4d953b992371ad.setContent(html_0d631631ae44a17123c2e96f4231ee23);
+            
+        
+
+        circle_marker_f618dbfc03401bd4c518e05ae52a5662.bindPopup(popup_12973550ded36a09bf4d953b992371ad)
+        ;
+
+        
+    
+    
+            var circle_marker_5eb571a2c75bb0378d0170f21af3fc11 = L.circleMarker(
+                [41.1533, 20.1683],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_8bb585fce15fc31aad80e209e9c9feb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc7cb7bae5bd465fd7556b0477d3b089 = $(`<div id="html_dc7cb7bae5bd465fd7556b0477d3b089" style="width: 100.0%; height: 100.0%;">Albania: Online Citizens’ Claims in the Judiciary System*</div>`)[0];
+                popup_8bb585fce15fc31aad80e209e9c9feb1.setContent(html_dc7cb7bae5bd465fd7556b0477d3b089);
+            
+        
+
+        circle_marker_5eb571a2c75bb0378d0170f21af3fc11.bindPopup(popup_8bb585fce15fc31aad80e209e9c9feb1)
+        ;
+
+        
+    
+    
+            var circle_marker_2eb29630096ee410e32c5dca7dd03413 = L.circleMarker(
+                [-35.6751, -71.543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_38a1e0eb419f12bb4f5a735b18624966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f2b0fbddbfb8d1be168ff53012cfb84 = $(`<div id="html_0f2b0fbddbfb8d1be168ff53012cfb84" style="width: 100.0%; height: 100.0%;">Chile: Justicia Abierta en la Defensoría Penal Pública</div>`)[0];
+                popup_38a1e0eb419f12bb4f5a735b18624966.setContent(html_0f2b0fbddbfb8d1be168ff53012cfb84);
+            
+        
+
+        circle_marker_2eb29630096ee410e32c5dca7dd03413.bindPopup(popup_38a1e0eb419f12bb4f5a735b18624966)
+        ;
+
+        
+    
+    
+            var circle_marker_de899a579b4845e1b82bb00e87265de9 = L.circleMarker(
+                [4.5709, -74.2973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_dd2b9c900de32bdd007bad9bf46e98a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccc59b64fbdd1458d751011fcc3911a4 = $(`<div id="html_ccc59b64fbdd1458d751011fcc3911a4" style="width: 100.0%; height: 100.0%;">Colombia: Sistemas Locales de Justicia*</div>`)[0];
+                popup_dd2b9c900de32bdd007bad9bf46e98a6.setContent(html_ccc59b64fbdd1458d751011fcc3911a4);
+            
+        
+
+        circle_marker_de899a579b4845e1b82bb00e87265de9.bindPopup(popup_dd2b9c900de32bdd007bad9bf46e98a6)
+        ;
+
+        
+    
+    
+            var circle_marker_4c4032d28738c9e6529ea10af32729df = L.circleMarker(
+                [4.5709, -74.2973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_01994cb3f6dd81dffd0109c63aadfa4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c63795c765343e48426c5efe9a24ddf = $(`<div id="html_6c63795c765343e48426c5efe9a24ddf" style="width: 100.0%; height: 100.0%;">Colombia: Estrategia de Construcción de Confianza y Consolidación de Transparencia y Rendición de Cuentas en el Consejo de Estado*</div>`)[0];
+                popup_01994cb3f6dd81dffd0109c63aadfa4e.setContent(html_6c63795c765343e48426c5efe9a24ddf);
+            
+        
+
+        circle_marker_4c4032d28738c9e6529ea10af32729df.bindPopup(popup_01994cb3f6dd81dffd0109c63aadfa4e)
+        ;
+
+        
+    
+    
+            var circle_marker_e8aa0eebed92a37900cc230ec1f6d4fd = L.circleMarker(
+                [4.5709, -74.2973],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_69d3310c1283c9a612b5a9d0be0dc70e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b21e2fcc8aa49022d0dd451ee812195a = $(`<div id="html_b21e2fcc8aa49022d0dd451ee812195a" style="width: 100.0%; height: 100.0%;">Colombia: Mesas de Trabajo y Asistencia Técnica para la Rendición de Cuentas en la Justicia*</div>`)[0];
+                popup_69d3310c1283c9a612b5a9d0be0dc70e.setContent(html_b21e2fcc8aa49022d0dd451ee812195a);
+            
+        
+
+        circle_marker_e8aa0eebed92a37900cc230ec1f6d4fd.bindPopup(popup_69d3310c1283c9a612b5a9d0be0dc70e)
+        ;
+
+        
+    
+    
+            var circle_marker_1d70c3157ad9f063eed582bd69ede9e9 = L.circleMarker(
+                [46.2276, 2.2137],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_72b8be5741d279675e2b02615262c0bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56029559fdb6797238bf982b2dbad69a = $(`<div id="html_56029559fdb6797238bf982b2dbad69a" style="width: 100.0%; height: 100.0%;">Francia: Plateforme de Participation Citoyenne | Consultation*</div>`)[0];
+                popup_72b8be5741d279675e2b02615262c0bc.setContent(html_56029559fdb6797238bf982b2dbad69a);
+            
+        
+
+        circle_marker_1d70c3157ad9f063eed582bd69ede9e9.bindPopup(popup_72b8be5741d279675e2b02615262c0bc)
+        ;
+
+        
+    
+    
+            var circle_marker_2b6ae487c5cb07b710c1be12a6880688 = L.circleMarker(
+                [46.2276, 2.2137],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_912254cc10fa296ae81b4fa17cef3da9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5be32ba9479caa4dadf927f4ce828312 = $(`<div id="html_5be32ba9479caa4dadf927f4ce828312" style="width: 100.0%; height: 100.0%;">Francia: Conseils de Jurisdiction*</div>`)[0];
+                popup_912254cc10fa296ae81b4fa17cef3da9.setContent(html_5be32ba9479caa4dadf927f4ce828312);
+            
+        
+
+        circle_marker_2b6ae487c5cb07b710c1be12a6880688.bindPopup(popup_912254cc10fa296ae81b4fa17cef3da9)
+        ;
+
+        
+    
+    
+            var circle_marker_e2799d070418011d1f1da362a42989ba = L.circleMarker(
+                [14.6415, -61.0242],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_aff360a01ad51e88cdd2fb2b9b656448 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a8c60b273738f921bed042107b8e204 = $(`<div id="html_5a8c60b273738f921bed042107b8e204" style="width: 100.0%; height: 100.0%;">Martinique: Conseil de Jurisdiction - Justice et Environnement*</div>`)[0];
+                popup_aff360a01ad51e88cdd2fb2b9b656448.setContent(html_5a8c60b273738f921bed042107b8e204);
+            
+        
+
+        circle_marker_e2799d070418011d1f1da362a42989ba.bindPopup(popup_aff360a01ad51e88cdd2fb2b9b656448)
+        ;
+
+        
+    
+    
+            var circle_marker_c910b9e07ec4a4508829b731b6a599ab = L.circleMarker(
+                [42.3154, 43.3569],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_a176b268746001f147e615393ab4c1c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd2054d366fceacd459e15854e530d41 = $(`<div id="html_cd2054d366fceacd459e15854e530d41" style="width: 100.0%; height: 100.0%;">Georgia: Introducción de Jucios por Jurados a Nivel Nacional</div>`)[0];
+                popup_a176b268746001f147e615393ab4c1c7.setContent(html_cd2054d366fceacd459e15854e530d41);
+            
+        
+
+        circle_marker_c910b9e07ec4a4508829b731b6a599ab.bindPopup(popup_a176b268746001f147e615393ab4c1c7)
+        ;
+
+        
+    
+    
+            var circle_marker_554a69e454d0b677d381ab95c6bfd534 = L.circleMarker(
+                [48.669, 19.699],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_0b0b9d577f56952000d489c5a53946c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3be793d448c52a41871bb3c7a4429f7b = $(`<div id="html_3be793d448c52a41871bb3c7a4429f7b" style="width: 100.0%; height: 100.0%;">Eslovaquia: Participación Ciudadana en el Proceso de Designación de Jueces**</div>`)[0];
+                popup_0b0b9d577f56952000d489c5a53946c2.setContent(html_3be793d448c52a41871bb3c7a4429f7b);
+            
+        
+
+        circle_marker_554a69e454d0b677d381ab95c6bfd534.bindPopup(popup_0b0b9d577f56952000d489c5a53946c2)
+        ;
+
+        
+    
+    
+            var circle_marker_61b57215fb1d649f157f15342ff974e7 = L.circleMarker(
+                [48.669, 19.699],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_036d157e99c41efd950d364ef248726f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe268db374e1faeda1b737b3e0d4241 = $(`<div id="html_3fe268db374e1faeda1b737b3e0d4241" style="width: 100.0%; height: 100.0%;">Eslovaquia: Via Iuris</div>`)[0];
+                popup_036d157e99c41efd950d364ef248726f.setContent(html_3fe268db374e1faeda1b737b3e0d4241);
+            
+        
+
+        circle_marker_61b57215fb1d649f157f15342ff974e7.bindPopup(popup_036d157e99c41efd950d364ef248726f)
+        ;
+
+        
+    
+    
+            var circle_marker_bcf03a42c5759d5b5e6e899992ae1277 = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_1e8fe359eebe6bb5b86520d587c0f19b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b78e5a4e9a6736e665d78861ec2fcbf3 = $(`<div id="html_b78e5a4e9a6736e665d78861ec2fcbf3" style="width: 100.0%; height: 100.0%;">Costa Rica: Servicio Nacional de Facilitadoras y Facilitadores Judiciales (SNFJ)*</div>`)[0];
+                popup_1e8fe359eebe6bb5b86520d587c0f19b.setContent(html_b78e5a4e9a6736e665d78861ec2fcbf3);
+            
+        
+
+        circle_marker_bcf03a42c5759d5b5e6e899992ae1277.bindPopup(popup_1e8fe359eebe6bb5b86520d587c0f19b)
+        ;
+
+        
+    
+    
+            var circle_marker_51ce1c358949e390fa5cf1e193ec88c8 = L.circleMarker(
+                [23.6345, -102.5528],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_3848de60a16e123bae8b73e7574e32bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17431df60837a396b5a3cac951a5d82 = $(`<div id="html_d17431df60837a396b5a3cac951a5d82" style="width: 100.0%; height: 100.0%;">México: Observatorio Ciudadano del Poder Judicial del Estado de Querétaro**</div>`)[0];
+                popup_3848de60a16e123bae8b73e7574e32bf.setContent(html_d17431df60837a396b5a3cac951a5d82);
+            
+        
+
+        circle_marker_51ce1c358949e390fa5cf1e193ec88c8.bindPopup(popup_3848de60a16e123bae8b73e7574e32bf)
+        ;
+
+        
+    
+    
+            var circle_marker_7c8d12b77639562abe7eff734e5337c6 = L.circleMarker(
+                [15.2, -86.2419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_94074ce1af88ddc7acaea6ad98f5b9ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597961f15664cfe511037009d7e0ba9a = $(`<div id="html_597961f15664cfe511037009d7e0ba9a" style="width: 100.0%; height: 100.0%;">Honduras: Participación Ciudadana en el Proceso de Designación de Jueces**</div>`)[0];
+                popup_94074ce1af88ddc7acaea6ad98f5b9ad.setContent(html_597961f15664cfe511037009d7e0ba9a);
+            
+        
+
+        circle_marker_7c8d12b77639562abe7eff734e5337c6.bindPopup(popup_94074ce1af88ddc7acaea6ad98f5b9ad)
+        ;
+
+        
+    
+    
+            var circle_marker_df38a7f14fc5bf03c214a1eb78f65073 = L.circleMarker(
+                [23.6345, -102.5528],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_1b26cde2b6dec26e60effb6587155507 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6af0a766849e342aa79357d64bd8f06f = $(`<div id="html_6af0a766849e342aa79357d64bd8f06f" style="width: 100.0%; height: 100.0%;">México: Taller de Fortalecimiento de los Poderes Judiciales</div>`)[0];
+                popup_1b26cde2b6dec26e60effb6587155507.setContent(html_6af0a766849e342aa79357d64bd8f06f);
+            
+        
+
+        circle_marker_df38a7f14fc5bf03c214a1eb78f65073.bindPopup(popup_1b26cde2b6dec26e60effb6587155507)
+        ;
+
+        
+    
+    
+            var circle_marker_e9c76e41e4c48977f768cc014486c94f = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_a2f53a0ce89676ec0aebda829593cdff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ddb5b6067af577adfe1ceefea36fe62 = $(`<div id="html_5ddb5b6067af577adfe1ceefea36fe62" style="width: 100.0%; height: 100.0%;">Costa Rica: Consejos Ampliados del Poder Judicial de Costa Rica*</div>`)[0];
+                popup_a2f53a0ce89676ec0aebda829593cdff.setContent(html_5ddb5b6067af577adfe1ceefea36fe62);
+            
+        
+
+        circle_marker_e9c76e41e4c48977f768cc014486c94f.bindPopup(popup_a2f53a0ce89676ec0aebda829593cdff)
+        ;
+
+        
+    
+    
+            var circle_marker_cd1bf6cc2b50c155feb9c58132f8b9ea = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_8055c654790097909e7e905304b54919 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f6df1a33901887042ca3ba2a48c0a62 = $(`<div id="html_4f6df1a33901887042ca3ba2a48c0a62" style="width: 100.0%; height: 100.0%;">Argentina: Datos Abiertos y Espacio Participativo Online</div>`)[0];
+                popup_8055c654790097909e7e905304b54919.setContent(html_4f6df1a33901887042ca3ba2a48c0a62);
+            
+        
+
+        circle_marker_cd1bf6cc2b50c155feb9c58132f8b9ea.bindPopup(popup_8055c654790097909e7e905304b54919)
+        ;
+
+        
+    
+    
+            var circle_marker_174f33366f32a2da4a7907989d6e21d6 = L.circleMarker(
+                [15.87, 100.9925],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_e1fee903ec5bc20c71b863fce303b8cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4d6a85b11522f0bb76251fb2b0dd973 = $(`<div id="html_b4d6a85b11522f0bb76251fb2b0dd973" style="width: 100.0%; height: 100.0%;">Tailandia: Justice by Design*</div>`)[0];
+                popup_e1fee903ec5bc20c71b863fce303b8cf.setContent(html_b4d6a85b11522f0bb76251fb2b0dd973);
+            
+        
+
+        circle_marker_174f33366f32a2da4a7907989d6e21d6.bindPopup(popup_e1fee903ec5bc20c71b863fce303b8cf)
+        ;
+
+        
+    
+    
+            var circle_marker_b6af56d72d624d6e574867daa21f76cf = L.circleMarker(
+                [9.082, 8.6753],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_15c2a1d4e75fafadae028a27af9d7cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95642d5880fab03035fa5b385cb28a37 = $(`<div id="html_95642d5880fab03035fa5b385cb28a37" style="width: 100.0%; height: 100.0%;">Nigeria: Trial Monitoring of Corruption Cases</div>`)[0];
+                popup_15c2a1d4e75fafadae028a27af9d7cc4.setContent(html_95642d5880fab03035fa5b385cb28a37);
+            
+        
+
+        circle_marker_b6af56d72d624d6e574867daa21f76cf.bindPopup(popup_15c2a1d4e75fafadae028a27af9d7cc4)
+        ;
+
+        
+    
+    
+            var circle_marker_587b9248261a62084b6fc06c21e738af = L.circleMarker(
+                [-35.6751, -71.543],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_e517ffee4e805eca54bbfb8d79559a9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_545f82b5f726ee8b729f52d1e0010a2f = $(`<div id="html_545f82b5f726ee8b729f52d1e0010a2f" style="width: 100.0%; height: 100.0%;">Chile: Conecta Justicia*</div>`)[0];
+                popup_e517ffee4e805eca54bbfb8d79559a9d.setContent(html_545f82b5f726ee8b729f52d1e0010a2f);
+            
+        
+
+        circle_marker_587b9248261a62084b6fc06c21e738af.bindPopup(popup_e517ffee4e805eca54bbfb8d79559a9d)
+        ;
+
+        
+    
+    
+            var circle_marker_4a3abeba86dc598fc19f3e55371046be = L.circleMarker(
+                [-23.4425, -58.4438],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_c82ab483ee081b3c413b1e401a0bf70d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32c96e0da3a03871feb2acf8666a57ef = $(`<div id="html_32c96e0da3a03871feb2acf8666a57ef" style="width: 100.0%; height: 100.0%;">Paraguay: Presupuesto Participativo para el Sistema de Justicia de San Pedro*</div>`)[0];
+                popup_c82ab483ee081b3c413b1e401a0bf70d.setContent(html_32c96e0da3a03871feb2acf8666a57ef);
+            
+        
+
+        circle_marker_4a3abeba86dc598fc19f3e55371046be.bindPopup(popup_c82ab483ee081b3c413b1e401a0bf70d)
+        ;
+
+        
+    
+    
+            var circle_marker_63fd458d2aa5f60142d751ca3668c447 = L.circleMarker(
+                [9.7489, -83.7534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_0977f7faff63c60263c3fdb923ac3fa4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d56745b2505a934f495d1ec3aad83f42 = $(`<div id="html_d56745b2505a934f495d1ec3aad83f42" style="width: 100.0%; height: 100.0%;">Costa Rica: Informes del Estado de la Justicia*</div>`)[0];
+                popup_0977f7faff63c60263c3fdb923ac3fa4.setContent(html_d56745b2505a934f495d1ec3aad83f42);
+            
+        
+
+        circle_marker_63fd458d2aa5f60142d751ca3668c447.bindPopup(popup_0977f7faff63c60263c3fdb923ac3fa4)
+        ;
+
+        
+    
+    
+            var circle_marker_0500180462604a4f4367c7268429c0b6 = L.circleMarker(
+                [35.9078, 127.7669],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_7619f838462a970ef7ee26934868bbf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72fb9ef16072bd9282c505ee2d31cd44 = $(`<div id="html_72fb9ef16072bd9282c505ee2d31cd44" style="width: 100.0%; height: 100.0%;">Corea del Sur: Introducción de los Juicios por Jurados*</div>`)[0];
+                popup_7619f838462a970ef7ee26934868bbf2.setContent(html_72fb9ef16072bd9282c505ee2d31cd44);
+            
+        
+
+        circle_marker_0500180462604a4f4367c7268429c0b6.bindPopup(popup_7619f838462a970ef7ee26934868bbf2)
+        ;
+
+        
+    
+    
+            var circle_marker_5aa146d699e47e0bb79c619116854862 = L.circleMarker(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_f05abb2a9c5c1075976755be77f58ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6aef3b428d002ee47f5cba5eb90d2320 = $(`<div id="html_6aef3b428d002ee47f5cba5eb90d2320" style="width: 100.0%; height: 100.0%;">España: Mecanismo de Quejas y Reclamos*</div>`)[0];
+                popup_f05abb2a9c5c1075976755be77f58ee5.setContent(html_6aef3b428d002ee47f5cba5eb90d2320);
+            
+        
+
+        circle_marker_5aa146d699e47e0bb79c619116854862.bindPopup(popup_f05abb2a9c5c1075976755be77f58ee5)
+        ;
+
+        
+    
+    
+            var circle_marker_a3d7fad8ac42c20e1ac1008a713d4dd8 = L.circleMarker(
+                [56.4907, -4.2026],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_ffc2a4e45ed622676e381edc75967c2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61320ae2ca6b02e4e0da397c4ad23ed0 = $(`<div id="html_61320ae2ca6b02e4e0da397c4ad23ed0" style="width: 100.0%; height: 100.0%;">Escocia: Quejas sobre Jueces*</div>`)[0];
+                popup_ffc2a4e45ed622676e381edc75967c2f.setContent(html_61320ae2ca6b02e4e0da397c4ad23ed0);
+            
+        
+
+        circle_marker_a3d7fad8ac42c20e1ac1008a713d4dd8.bindPopup(popup_ffc2a4e45ed622676e381edc75967c2f)
+        ;
+
+        
+    
+    
+            var circle_marker_17575be3e05a9c6f936340cb8b7e4f34 = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_40156909eb3beb2a95760856618d8eb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d816af70fb47ca99d77759f52a9a130 = $(`<div id="html_8d816af70fb47ca99d77759f52a9a130" style="width: 100.0%; height: 100.0%;">Estados Unidos: Street Law Mock Trial Event*</div>`)[0];
+                popup_40156909eb3beb2a95760856618d8eb0.setContent(html_8d816af70fb47ca99d77759f52a9a130);
+            
+        
+
+        circle_marker_17575be3e05a9c6f936340cb8b7e4f34.bindPopup(popup_40156909eb3beb2a95760856618d8eb0)
+        ;
+
+        
+    
+    
+            var circle_marker_4896cddeca3c2181c08b0081f59dd8bd = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_bd9efcf3700d4fa57c3200ace8da7f5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba9d21521e734f5d0c684e0b560b228f = $(`<div id="html_ba9d21521e734f5d0c684e0b560b228f" style="width: 100.0%; height: 100.0%;">Brasil: Polo Indígena de Conciliación de Roraima*</div>`)[0];
+                popup_bd9efcf3700d4fa57c3200ace8da7f5d.setContent(html_ba9d21521e734f5d0c684e0b560b228f);
+            
+        
+
+        circle_marker_4896cddeca3c2181c08b0081f59dd8bd.bindPopup(popup_bd9efcf3700d4fa57c3200ace8da7f5d)
+        ;
+
+        
+    
+    
+            var circle_marker_78cb67ccbb3e966ec2b344bbf0dd5994 = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_9ea00253b939087e5c0dec27c2df265d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a0b103de3e37e2817483dd684ecb74e = $(`<div id="html_2a0b103de3e37e2817483dd684ecb74e" style="width: 100.0%; height: 100.0%;">Brasil: Amicus Curiae en Acciones de Control Concentrado de Constitucionalidad*</div>`)[0];
+                popup_9ea00253b939087e5c0dec27c2df265d.setContent(html_2a0b103de3e37e2817483dd684ecb74e);
+            
+        
+
+        circle_marker_78cb67ccbb3e966ec2b344bbf0dd5994.bindPopup(popup_9ea00253b939087e5c0dec27c2df265d)
+        ;
+
+        
+    
+    
+            var circle_marker_48bd81ce6eb5c63b1dee308893413749 = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_0c7cd52224aaeb73d447c21b7e8e09b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d54cfbe81c117a4a8ff9b1c48ba74c00 = $(`<div id="html_d54cfbe81c117a4a8ff9b1c48ba74c00" style="width: 100.0%; height: 100.0%;">Argentina: JusLab*</div>`)[0];
+                popup_0c7cd52224aaeb73d447c21b7e8e09b0.setContent(html_d54cfbe81c117a4a8ff9b1c48ba74c00);
+            
+        
+
+        circle_marker_48bd81ce6eb5c63b1dee308893413749.bindPopup(popup_0c7cd52224aaeb73d447c21b7e8e09b0)
+        ;
+
+        
+    
+    
+            var circle_marker_f7c442071f21351296e14acb67095097 = L.circleMarker(
+                [55.3781, -3.436],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7279bff924aa596b49169333e3634fcb);
+        
+    
+        var popup_4bb171c92f6198ed43d402294cb52de9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f18ed56ec3e167402d464a88e9c79c8 = $(`<div id="html_2f18ed56ec3e167402d464a88e9c79c8" style="width: 100.0%; height: 100.0%;">Reino Unido: Open Justice: The Perspective of Public Observers*</div>`)[0];
+                popup_4bb171c92f6198ed43d402294cb52de9.setContent(html_2f18ed56ec3e167402d464a88e9c79c8);
+            
+        
+
+        circle_marker_f7c442071f21351296e14acb67095097.bindPopup(popup_4bb171c92f6198ed43d402294cb52de9)
+        ;
+
+        
+    
+    
+            marker_cluster_7279bff924aa596b49169333e3634fcb.addTo(map_2baeb58b90ce5461d997b6c355549b96);
+        
+</script>
+</html>

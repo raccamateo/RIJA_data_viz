@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cbaf332e0cea94bb9a015f343d46264c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cbaf332e0cea94bb9a015f343d46264c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cbaf332e0cea94bb9a015f343d46264c = L.map(
+                "map_cbaf332e0cea94bb9a015f343d46264c",
+                {
+                    center: [4.0, -74.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6e955b9fb58e4d82e67dae64103f96a5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_6e955b9fb58e4d82e67dae64103f96a5.addTo(map_cbaf332e0cea94bb9a015f343d46264c);
+        
+    
+            var marker_cluster_9adbe0fc72b883c75fb1282df66fafb2 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_67d4f1fcb4e516e5e74f8327631dc72c = L.marker(
+                [-14.235, -51.9253],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_98ca051cc81e65aa9fbde06fbf0c568d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67d4f1fcb4e516e5e74f8327631dc72c.setIcon(icon_98ca051cc81e65aa9fbde06fbf0c568d);
+        
+    
+        var popup_d03885b4661fed8194d93e7d0c4af5ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_adc8afe0b2a492fa251900d457ad422c = $(`<div id="html_adc8afe0b2a492fa251900d457ad422c" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> Laboratorio de Innovación y Objetivos de Desarrollo Sostenible*<br>             <b>Country:</b> Brasil<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> El Laboratorio de Innovación y Objetivos de Desarrollo Sostenible del Poder Judicial de Brasil tiene, entre otros, el objetivo de abrir espacios para la participación ciudadana en el diseño de proyectos innovadores en el ámbito judicial, con un énfasis especial en contribuciones cuyas temáticas estén ligadas a la Agenda 2030.  El Laboratorio fue creado por una Resolución del Consejo Nacional de Justicia en el año 2021, en la cual se establecen los principios que sustentan su funcionaminto: cultura de la innovación, participación, colaboración, accesibilidad y transparencia, entre otros. <br>             <b><a href='Consejo Nacional de Justicia | Establecimiento del Laboratorio de Innovación y Objetivos de Desarrollo Sostenible' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_d03885b4661fed8194d93e7d0c4af5ab.setContent(html_adc8afe0b2a492fa251900d457ad422c);
+            
+        
+
+        marker_67d4f1fcb4e516e5e74f8327631dc72c.bindPopup(popup_d03885b4661fed8194d93e7d0c4af5ab)
+        ;
+
+        
+    
+    
+            var marker_3b88fd5e7e104b034b73a055b740a555 = L.marker(
+                [-14.235, -51.9253],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_610d1863681e6c71194a55e4ae90ac62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b88fd5e7e104b034b73a055b740a555.setIcon(icon_610d1863681e6c71194a55e4ae90ac62);
+        
+    
+        var popup_91f5a080e87f0b687e22a613477aab98 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_468d9d5a3d8f1f8ce59bd7f9d232941d = $(`<div id="html_468d9d5a3d8f1f8ce59bd7f9d232941d" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> 1er Hackatón LIODS/CNJ**<br>             <b>Country:</b> Brasil<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> El Programa Hacka-Liods CNJ constituyó el primer Hackathon realizado por el Laboratorio de Innovación y Objetivos de Desarrollo Sostenible del Poder Judicial de Brasil. Llevado a cabo en 2021, el Hackathon se propuso combinar el conocimiento institucional, la innovación y la cooperación con el objetivo de lograr la paz, la justicia y la eficiencia institucional.   Este primer Hackathon estuvo fundamentado en una de las principales funciones del Laboratorio de Innovación y Objetivos de Desarrollo Sostenible: abrir un espacio para la participación ciudadana en el diseño de proyectos innovadores en el poder judicial y que contribuyan a la efectividad de la Agenda 2030. La actividad se realizó gracias a una alianza inter-institucional  con Exponencial Judicial, una empresa que tiene como misión la preparación de instituciones y personas para la justicia del futuro.<br>             <b><a href='Consejo Nacional de Justicia | 1er Hackatón LIODS/CNJ' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_91f5a080e87f0b687e22a613477aab98.setContent(html_468d9d5a3d8f1f8ce59bd7f9d232941d);
+            
+        
+
+        marker_3b88fd5e7e104b034b73a055b740a555.bindPopup(popup_91f5a080e87f0b687e22a613477aab98)
+        ;
+
+        
+    
+    
+            var marker_16a0017bdda66eb01461faa629c1fd4c = L.marker(
+                [-14.235, -51.9253],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_64e640fdab21cafdd52a735b96ed180d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16a0017bdda66eb01461faa629c1fd4c.setIcon(icon_64e640fdab21cafdd52a735b96ed180d);
+        
+    
+        var popup_4708ac4c4d0aafa9cef3c944c494bc6e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c261452278740d0def3e8a8831dd05d0 = $(`<div id="html_c261452278740d0def3e8a8831dd05d0" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b>  Política Nacional de Atención a Personas en Calle y sus Interseccionalidades<br>             <b>Country:</b> Brasil<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b>  La Política Nacional de Atención a Personas en Calle y sus Interseccionalidades está a cargo del Consejo Nacional de Justicia en Brasil. Fue puesta en marcha ante el desafío de garantizar el acceso a la Justicia a las poblaciones más vulnerables.  Establecida por medio de una Resolución en 2021, la Política se propone ofrecer a la población sin hogar un servicio prioritario y sin demoras burocráticas en los Tribunales brasileños, posibilitando el acceso a la Justicia de forma rápida, simplificada y eficaz. Algunas actividades específicas desarrolldas en el marco de esta Política Nacional de Atención incluye la realización de audiencias públicas especializadas y la recopilación de testimonios y reclamos sobre el funcionamiento de la Justicia en Brasil.<br>             <b><a href='Consejo Nacional de Justicia | Política Nacional de Atención a Personas en Calle y sus interseccionalidades' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_4708ac4c4d0aafa9cef3c944c494bc6e.setContent(html_c261452278740d0def3e8a8831dd05d0);
+            
+        
+
+        marker_16a0017bdda66eb01461faa629c1fd4c.bindPopup(popup_4708ac4c4d0aafa9cef3c944c494bc6e)
+        ;
+
+        
+    
+    
+            var marker_8d7d590632e66802dfa2314c90150334 = L.marker(
+                [-38.4161, -63.6167],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_ae7aa8444a098f58a7f75c671f20921b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d7d590632e66802dfa2314c90150334.setIcon(icon_ae7aa8444a098f58a7f75c671f20921b);
+        
+    
+        var popup_f7184b4fafc5ac36d7dd3b8dca73a7c8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0f92b14d5b30c475f894cd1f35419bd = $(`<div id="html_e0f92b14d5b30c475f894cd1f35419bd" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> JusBaires Abierto | Participación Ciudadana - Programa Protagonistas de Justicia (ProJus)*<br>             <b>Country:</b> Argentina<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> Desde su creación en 2021, el Programa Protagonistas de Justicia del Consejo de la Magistratura de la Ciudad Autónoma de Buenos Aires se propone detectar y fortalecer a mujeres líderes territoriales que promueven y facilitan el acceso a la Justicia en sus barrios. A través de encuentros individuales y grupales, ProJus construye un equipo de referentes comunitarias que participan en los barrios ampliando la protección de los derechos de la ciudadanía, en base a cinco ejes: capacitación, empoderamiento, participación, difusión, interacción e integración.  La metodología de trabajo con las líderes convocadas como Protagonistas de Justicia favorece el desarrollo de habilidades socio-emocionales, así como también la capacitación en técnicas jurídicas, con un enfoque de derechos humanos y perspectiva de género. A través de especialistas, se las instruye sobre la normativa existente y los circuitos de derivación, a la vez que se estimula la participación generando debates sobre vulneración de derechos.<br>             <b><a href='JusBaires Abierto | Participación Ciudadana - Programa Protagonistas de Justicia' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_f7184b4fafc5ac36d7dd3b8dca73a7c8.setContent(html_e0f92b14d5b30c475f894cd1f35419bd);
+            
+        
+
+        marker_8d7d590632e66802dfa2314c90150334.bindPopup(popup_f7184b4fafc5ac36d7dd3b8dca73a7c8)
+        ;
+
+        
+    
+    
+            var marker_87cc9dc761986d2b03e657ca9d7d99e8 = L.marker(
+                [18.7357, -70.1627],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_b64c47ed083979b5c92f96dba583a019 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87cc9dc761986d2b03e657ca9d7d99e8.setIcon(icon_b64c47ed083979b5c92f96dba583a019);
+        
+    
+        var popup_ac5a8130d5892554ab05f6fd3b3b2fca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62ab400ef4e7c2c2bb2a02b6748b1366 = $(`<div id="html_62ab400ef4e7c2c2bb2a02b6748b1366" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> Lab de Innovación para la Justicia de la Escuela Nacional de la Judicatura de la República Dominicana*<br>             <b>Country:</b> República Dominicana<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> El Lab de Innovación para la Justicia de la Escuela Nacional de la Judicatura de la República Dominicana (Lab ENJ) tiene el objetivo de fomentar el trabajo en conjunto de la academia, el sector privado, el sector público y la sociedad civil, con el propósito de innovar para mejorar la justicia, crear nuevos servicios que solucionen los problemas de los ciudadanos y generar conocimiento que permita innovar en la profesión del derecho.  Desde su creación en 2021, sus actividades se basan en tres pilares: el trabajo en la intersección de varias disciplinas; el diseño de soluciones centrado en el usuario; y la conformación de una red con modalidad de hub (centro de encuentro) para la profesión legal. Está inspirado en el Legal Design Lab de la Universidad de Stanford.<br>             <b><a href='Lab ENJ  Escuela Nacional de la Judicatura lanza laboratorio de innovación para la justicia' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_ac5a8130d5892554ab05f6fd3b3b2fca.setContent(html_62ab400ef4e7c2c2bb2a02b6748b1366);
+            
+        
+
+        marker_87cc9dc761986d2b03e657ca9d7d99e8.bindPopup(popup_ac5a8130d5892554ab05f6fd3b3b2fca)
+        ;
+
+        
+    
+    
+            var marker_fbd2d27b9655072f4b5fc779a1f84c1b = L.marker(
+                [18.7357, -70.1627],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_3df551f0a6e38fea380cfc698214122c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fbd2d27b9655072f4b5fc779a1f84c1b.setIcon(icon_3df551f0a6e38fea380cfc698214122c);
+        
+    
+        var popup_d0711792f97de8a616adfe996659a8ec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99ffb2dcb39bbcdf66322749cc2bf746 = $(`<div id="html_99ffb2dcb39bbcdf66322749cc2bf746" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> Hackathon Visión Justicia - Lab ENJ*<br>             <b>Country:</b> República Dominicana<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> El Hackathon Visión Justicia, realizado en 2021 por el Lab de Innovación para la Justicia de la Escuela Nacional de la Judicatura de la República Dominicana, convocó a equipos de estudiantes de diferentes disciplinas con el objetivo de funcionar como un espacio de diseño de soluciones a las problemáticas del poder judicial basadas en innovación tecnológica.  Las soluciones se centraron en propuestas de creación de nuevos servicios y propuestas de reforma al sistema de administración de justicia vigente, incentivando la presentación de proyectos enfocados en las necesidades de las personas usuarias del sistema de justicia.<br>             <b><a href='Hackatón Visión Justicia  Escuela Nacional de la Judicatura premia ganadores del Hackatón Visión Justicia' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_d0711792f97de8a616adfe996659a8ec.setContent(html_99ffb2dcb39bbcdf66322749cc2bf746);
+            
+        
+
+        marker_fbd2d27b9655072f4b5fc779a1f84c1b.bindPopup(popup_d0711792f97de8a616adfe996659a8ec)
+        ;
+
+        
+    
+    
+            var marker_7531af98233c6c95a32dc4895d453dd2 = L.marker(
+                [56.4907, -4.2026],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_3f07e9dbf20209377811c72ff08d86d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7531af98233c6c95a32dc4895d453dd2.setIcon(icon_3f07e9dbf20209377811c72ff08d86d7);
+        
+    
+        var popup_c57608a25675adfe578e8e963d255e93 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d673424e16ac6759d18698a413caa6e7 = $(`<div id="html_d673424e16ac6759d18698a413caa6e7" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> Court User Satisfaction Survey<br>             <b>Country:</b> Escocia<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> La Encuesta de Satisfacción de Usuarios (Court User Satisfaction Survey) de las Cortes de Escocia y sus Tribunales de Servicios, puesta a disposición del público por primera vez en 2021, opera como un instrumento de recepción de devoluciones sobre las experiencias de los usuarios que han tenido parte en procesos  y trámites judiciales. En ella no sólo se contemplan dimensiones relacionadas a dichos procesos, sino también al trato recibido por funcionarios/as y a las condiciones infraestructurales y de accesibilidad, entre otras.  Si bien los comentarios recibidos no tienen carácter vinulante para las autoridades de las Cortes, los resultados son recopilados para ser evaluados y tenidos en consideración en la medida en la cual se lo vea pertinente. Adicionalmente, se realizan publicaciones periódicas de dichos resultados con el objetivo de fomentar el acceso a la información y la transparencia.<br>             <b><a href='Court User Satisfaction Survey 2021 – 2023 results' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_c57608a25675adfe578e8e963d255e93.setContent(html_d673424e16ac6759d18698a413caa6e7);
+            
+        
+
+        marker_7531af98233c6c95a32dc4895d453dd2.bindPopup(popup_c57608a25675adfe578e8e963d255e93)
+        ;
+
+        
+    
+    
+            var marker_5c75cae18e2e5608be318cb606d829fa = L.marker(
+                [-0.0236, 37.9062],
+                {}
+            ).addTo(marker_cluster_9adbe0fc72b883c75fb1282df66fafb2);
+        
+    
+            var icon_4f2b8cc47bb29d4dce1ff631fe1e023c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c75cae18e2e5608be318cb606d829fa.setIcon(icon_4f2b8cc47bb29d4dce1ff631fe1e023c);
+        
+    
+        var popup_b8c785e0df62b716ac5c69b30be70f68 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9843c2a3e45879ceb0df87fdbfb56e80 = $(`<div id="html_9843c2a3e45879ceb0df87fdbfb56e80" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> Court User Satisfaction Survey<br>             <b>Country:</b> Kenya<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> La Encuesta de Satisfacción de Usuarios (Court User Satisfaction Survey) del Poder Judicial de Kenya, cuyos resultados fueron puestos a disposición del público por primera vez en 2021, opera como un instrumento de recepción de devoluciones sobre las experiencias de los usuarios que han tenido parte en procesos  y trámites judiciales. En ella no sólo se contemplan dimensiones relacionadas a dichos procesos, sino también al trato recibido por funcionarios/as y a las condiciones infraestructurales y de accesibilidad, entre otras.  Si bien los comentarios recibidos no tienen carácter vinulante para las autoridades de las dependencias del poder judicial, los resultados son recopilados para ser evaluados y tenidos en consideración en la medida en la cual se lo vea pertinente. Adicionalmente, se realizan publicaciones periódicas de dichos resultados con el objetivo de fomentar el acceso a la información y la transparencia.<br>             <b><a href='Court User Satisfaction Survey Report, 2021' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_b8c785e0df62b716ac5c69b30be70f68.setContent(html_9843c2a3e45879ceb0df87fdbfb56e80);
+            
+        
+
+        marker_5c75cae18e2e5608be318cb606d829fa.bindPopup(popup_b8c785e0df62b716ac5c69b30be70f68)
+        ;
+
+        
+    
+    
+            marker_cluster_9adbe0fc72b883c75fb1282df66fafb2.addTo(map_cbaf332e0cea94bb9a015f343d46264c);
+        
+</script>
+</html>

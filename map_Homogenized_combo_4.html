@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d705a0e633d260c9cf4aa2ec8940776f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d705a0e633d260c9cf4aa2ec8940776f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d705a0e633d260c9cf4aa2ec8940776f = L.map(
+                "map_d705a0e633d260c9cf4aa2ec8940776f",
+                {
+                    center: [4.0, -74.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a9fd6291b7dcfd5dc6ee2c0098e691ff = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_a9fd6291b7dcfd5dc6ee2c0098e691ff.addTo(map_d705a0e633d260c9cf4aa2ec8940776f);
+        
+    
+            var marker_cluster_17e4243fc3ec1a9d7180d77680131525 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_b3e793932b6b19ed3d1b1dd09b33918a = L.marker(
+                [-38.4161, -63.6167],
+                {}
+            ).addTo(marker_cluster_17e4243fc3ec1a9d7180d77680131525);
+        
+    
+            var icon_1fdbfedad5921c05f59036c0a42531fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3e793932b6b19ed3d1b1dd09b33918a.setIcon(icon_1fdbfedad5921c05f59036c0a42531fc);
+        
+    
+        var popup_30d8b7e08fe9e9a8530546a5aca8806d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a27d0ca46c96849f8cdb28f747c0c64 = $(`<div id="html_4a27d0ca46c96849f8cdb28f747c0c64" style="width: 100.0%; height: 100.0%;">             <b>Initiative:</b> JusBaires Abierto | Participación Ciudadana - Programa Protagonistas de Justicia (ProJus)*<br>             <b>Country:</b> Argentina<br>             <b>Year:</b> 2021.0<br>             <b>Drivers:</b> Iniciativa Propia<br>             <b>Description:</b> Desde su creación en 2021, el Programa Protagonistas de Justicia del Consejo de la Magistratura de l...<br>             <b><a href='JusBaires Abierto | Participación Ciudadana - Programa Protagonistas de Justicia' target='_blank'>Technical Sheet</a></b>             </div>`)[0];
+                popup_30d8b7e08fe9e9a8530546a5aca8806d.setContent(html_4a27d0ca46c96849f8cdb28f747c0c64);
+            
+        
+
+        marker_b3e793932b6b19ed3d1b1dd09b33918a.bindPopup(popup_30d8b7e08fe9e9a8530546a5aca8806d)
+        ;
+
+        
+    
+    
+            marker_cluster_17e4243fc3ec1a9d7180d77680131525.addTo(map_d705a0e633d260c9cf4aa2ec8940776f);
+        
+</script>
+</html>
