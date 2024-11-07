@@ -26,7 +26,7 @@ selected_drivers = st.sidebar.multiselect("Seleccionar Impulsores", sorted(mapeo
 filtered_data = mapeo_de_casos.copy()
 if selected_countries:
     filtered_data = filtered_data[filtered_data['País'].isin(selected_countries)]
-if selected_types:
+if selected_types and 'Type' in filtered_data.columns:
     filtered_data = filtered_data[filtered_data['Type'].isin(selected_types)]
 if selected_drivers:
     filtered_data = filtered_data[filtered_data['Impulsores'].isin(selected_drivers)]
