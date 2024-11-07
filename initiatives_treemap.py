@@ -31,6 +31,12 @@ if selected_types:
 if selected_drivers:
     filtered_data = filtered_data[filtered_data['Impulsores'].isin(selected_drivers)]
 
+# Drop rows with NaN values in required columns for the treemap
+required_columns = ['Año de Inicio', 'País', 'Nombre']
+if 'Type' in filtered_data.columns:
+    required_columns.append('Type')
+filtered_data.dropna(subset=required_columns, inplace=True)
+
 # Treemap Visualization
 st.header("Distribución de Iniciativas - Treemap")
 
@@ -71,3 +77,4 @@ st.plotly_chart(fig)
 # Show a filtered data preview without specific columns
 columns_to_display = filtered_data.drop(columns=["Description (Homogenized)", "Latitude", "Longitude"], errors='ignore')
 st.dataframe(columns_to_display)
+
