@@ -10,6 +10,9 @@ mapeo_de_casos = pd.read_excel(file_path)
 # Truncate data to start from 1996
 mapeo_de_casos = mapeo_de_casos[mapeo_de_casos['Año de Inicio'] >= 1996]
 
+# Add a new column to represent the count of each initiative
+mapeo_de_casos['Conteo'] = 1  # Assign a count of 1 to each initiative
+
 # Streamlit dashboard layout
 st.title("Dashboard de Iniciativas Ciudadanas - Treemap")
 
@@ -46,7 +49,7 @@ try:
         fig = px.treemap(
             filtered_data,
             path=['Año de Inicio', 'País', 'Type'],  # Define the hierarchy
-            values='Nombre',  # Using 'Nombre' as a placeholder for counting
+            values='Conteo',  # Use 'Conteo' column for counting initiatives
             title="Distribución de Iniciativas por Año, País y Tipo",
             color='Año de Inicio',  # Color by Year for better contrast
             color_continuous_scale='Viridis',
@@ -54,21 +57,21 @@ try:
                 'Año de Inicio': True,  # Show year
                 'País': True,  # Show country
                 'Type': True,  # Show initiative type (if applicable)
-                'Nombre': 'count'  # Show count of initiatives
+                'Conteo': True  # Show count of initiatives
             }
         )
     else:
         fig = px.treemap(
             filtered_data,
             path=['Año de Inicio', 'País'],  # Define hierarchy without Type if unavailable
-            values='Nombre',
+            values='Conteo',  # Use 'Conteo' column for counting initiatives
             title="Distribución de Iniciativas por Año y País",
             color='Año de Inicio',
             color_continuous_scale='Viridis',
             hover_data={
                 'Año de Inicio': True,
                 'País': True,
-                'Nombre': 'count'
+                'Conteo': True
             }
         )
 
@@ -81,3 +84,4 @@ except ValueError as e:
 # Show a filtered data preview without specific columns
 columns_to_display = filtered_data.drop(columns=["Description (Homogenized)", "Latitude", "Longitude"], errors='ignore')
 st.dataframe(columns_to_display)
+
