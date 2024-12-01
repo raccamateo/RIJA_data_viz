@@ -8,9 +8,10 @@ import streamlit as st
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
 mapeo_de_casos = pd.read_excel(file_path)
 
-# Round years in the dataset
+# Handle NaN values and round years
 if 'Año de Inicio' in mapeo_de_casos.columns:
-    mapeo_de_casos['Año de Inicio'] = mapeo_de_casos['Año de Inicio'].round(0).astype(int)
+    mapeo_de_casos['Año de Inicio'] = mapeo_de_casos['Año de Inicio'].fillna(0).round(0).astype(int)
+    mapeo_de_casos.loc[mapeo_de_casos['Año de Inicio'] == 0, 'Año de Inicio'] = None  # Replace 0 with None for clarity
 
 # Streamlit layout
 st.title("Mapa Interactivo de Iniciativas Ciudadanas")
@@ -50,7 +51,7 @@ for _, row in filtered_data.iterrows():
         <b>Nombre:</b> {row['Nombre']}<br>
         <b>País:</b> {row['País']}<br>
         <b>Impulsores:</b> {row['Impulsores']}<br>
-        <b>Año:</b> {row['Año de Inicio']}<br>
+        <b>Año:</b> {row['Año de Inicio'] if row['Año de Inicio'] else 'N/A'}<br>
         <b><a href="{row['Links / Recursos']}" target="_blank">Ficha técnica</a></b>
         """
         folium.Marker(
