@@ -14,12 +14,21 @@ if 'Año de Inicio' in mapeo_de_casos.columns:
     mapeo_de_casos.loc[mapeo_de_casos['Año de Inicio'] == 0, 'Año de Inicio'] = None  # Replace 0 with None for clarity
 
 # Streamlit layout
+st.set_page_config(layout="wide")  # Set layout to wide for better screen utilization
 st.title("Mapa Interactivo de Iniciativas Ciudadanas")
 
 # Sidebar filters with compact styling
 with st.sidebar:
+    st.markdown(
+        """
+        <style>
+        .sidebar .widget { font-size: 0.9rem; }
+        .sidebar select, .sidebar input { max-width: 90%; }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
     st.header("Filtros")
-    st.markdown("<style>.sidebar .widget {font-size: 0.9rem;}</style>", unsafe_allow_html=True)
     selected_countries = st.multiselect("Seleccionar Países", sorted(mapeo_de_casos['País'].dropna().unique()))
     selected_drivers = st.multiselect("Seleccionar Impulsores", sorted(mapeo_de_casos['Impulsores'].dropna().unique()))
     selected_years = st.multiselect("Seleccionar Años", sorted(mapeo_de_casos['Año de Inicio'].dropna().unique()))
@@ -33,15 +42,15 @@ if selected_drivers:
 if selected_years:
     filtered_data = filtered_data[filtered_data['Año de Inicio'].isin(selected_years)]
 
-# Center map with panoramic view
+# Center map with bounds
 if not filtered_data.empty:
-    avg_lat = filtered_data['Latitude'].mean()
-    avg_lon = filtered_data['Longitude'].mean()
+    map_bounds = [[filtered_data['Latitude'].min(), filtered_data['Longitude'].min()],
+                  [filtered_data['Latitude'].max(), filtered_data['Longitude'].max()]]
 else:
-    avg_lat, avg_lon = 0, 0  # Default center for empty data
+    map_bounds = [[-90, -180], [90, 180]]  # Default global bounds for empty data
 
-# Create map with infinite scrolling and panoramic initial view
-m = folium.Map(location=[avg_lat, avg_lon], zoom_start=2, tiles="CartoDB positron", scrollWheelZoom=True)
+# Create map with appropriate size and bounds
+m = folium.Map(location=[0, 0], zoom_start=2, tiles="CartoDB positron", scrollWheelZoom=True, max_bounds=True)
 marker_cluster = MarkerCluster().add_to(m)
 
 # Add markers
@@ -52,6 +61,7 @@ for _, row in filtered_data.iterrows():
         <b>País:</b> {row['País']}<br>
         <b>Impulsores:</b> {row['Impulsores']}<br>
         <b>Año:</b> {row['Año de Inicio'] if row['Año de Inicio'] else 'N/A'}<br>
+        <b>Descripción:</b> {row['Description'] if 'Description' in row else 'Sin descripción disponible'}<br>
         <b><a href="{row['Links / Recursos']}" target="_blank">Ficha técnica</a></b>
         """
         folium.Marker(
@@ -60,5 +70,8 @@ for _, row in filtered_data.iterrows():
             icon=folium.Icon(color="blue", icon="info-sign")
         ).add_to(marker_cluster)
 
+# Fit map to bounds
+m.fit_bounds(map_bounds)
+
 # Display map
-folium_static(m)
+folium_static(m, width=1200, height=700)
