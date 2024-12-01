@@ -73,5 +73,5 @@ for _, row in filtered_data.iterrows():
 # Fit map to bounds
 m.fit_bounds(map_bounds)
 
-# Display map
-folium_static(m, width=1200, height=700)
+# Display map with adjusted size
+folium_static(m, width=1400, height=800)
