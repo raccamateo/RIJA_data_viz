@@ -17,20 +17,17 @@ if 'Año de Inicio' in mapeo_de_casos.columns:
 st.set_page_config(layout="wide")  # Set layout to wide for better screen utilization
 st.title("Mapa Interactivo de Iniciativas Ciudadanas")
 
-# Sidebar filters with compact styling
-with st.sidebar:
-    st.markdown(
-        """
-        <style>
-        .sidebar .widget { font-size: 0.9rem; }
-        .sidebar select, .sidebar input { max-width: 90%; }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-    st.header("Filtros")
+# Filters placed inside the main content area above the map
+st.subheader("Filtros")
+col1, col2, col3 = st.columns(3)
+
+with col1:
     selected_countries = st.multiselect("Seleccionar Países", sorted(mapeo_de_casos['País'].dropna().unique()))
+
+with col2:
     selected_drivers = st.multiselect("Seleccionar Impulsores", sorted(mapeo_de_casos['Impulsores'].dropna().unique()))
+
+with col3:
     selected_years = st.multiselect("Seleccionar Años", sorted(mapeo_de_casos['Año de Inicio'].dropna().unique()))
 
 # Filter data
@@ -74,4 +71,5 @@ for _, row in filtered_data.iterrows():
 m.fit_bounds(map_bounds)
 
 # Display map with adjusted size
-folium_static(m, width=1400, height=800)
+st.write("Mapa interactivo:")
+folium_static(m, width=1400, height=700)
