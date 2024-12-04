@@ -17,18 +17,42 @@ if 'Año de Inicio' in mapeo_de_casos.columns:
 st.set_page_config(layout="wide")  # Set layout to wide for better screen utilization
 st.title("Mapa Interactivo de Iniciativas Ciudadanas")
 
-# Filters placed inside the main content area above the map
-st.subheader("Filtros")
-col1, col2, col3 = st.columns(3)
+# Filters placed above the map
+st.markdown(
+    """
+    <style>
+    .filter-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .filter-container div {
+        flex: 1;
+        margin: 0 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+st.markdown('<div class="filter-container">', unsafe_allow_html=True)
 
+# Create filters
+col1, col2, col3 = st.columns([1, 1, 1], gap="small")
 with col1:
-    selected_countries = st.multiselect("Seleccionar Países", sorted(mapeo_de_casos['País'].dropna().unique()))
-
+    selected_countries = st.multiselect(
+        "Seleccionar Países", sorted(mapeo_de_casos['País'].dropna().unique()), help="Filtra por país"
+    )
 with col2:
-    selected_drivers = st.multiselect("Seleccionar Impulsores", sorted(mapeo_de_casos['Impulsores'].dropna().unique()))
-
+    selected_drivers = st.multiselect(
+        "Seleccionar Impulsores", sorted(mapeo_de_casos['Impulsores'].dropna().unique()), help="Filtra por impulsores"
+    )
 with col3:
-    selected_years = st.multiselect("Seleccionar Años", sorted(mapeo_de_casos['Año de Inicio'].dropna().unique()))
+    selected_years = st.multiselect(
+        "Seleccionar Años", sorted(mapeo_de_casos['Año de Inicio'].dropna().unique()), help="Filtra por años"
+    )
+
+st.markdown('</div>', unsafe_allow_html=True)
 
 # Filter data
 filtered_data = mapeo_de_casos.copy()
@@ -70,6 +94,6 @@ for _, row in filtered_data.iterrows():
 # Fit map to bounds
 m.fit_bounds(map_bounds)
 
-# Display map with adjusted size
+# Display map
 st.write("Mapa interactivo:")
-folium_static(m, width=1400, height=700)
+folium_static(m, width=1400, height=800)
