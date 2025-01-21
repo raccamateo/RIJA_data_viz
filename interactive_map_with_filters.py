@@ -1,11 +1,12 @@
+import streamlit as st
+
+# Streamlit page configuration must be the first command
+st.set_page_config(layout="wide", page_title="Mapa Interactivo de Iniciativas", page_icon="🌍")
+
 import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
-import streamlit as st
-
-# Streamlit page configuration
-st.set_page_config(layout="wide", page_title="Mapa Interactivo de Iniciativas", page_icon="🌍")
 
 # Load data
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
