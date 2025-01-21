@@ -6,7 +6,7 @@ import streamlit as st
 
 # Load data
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
-base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Adjust if file path changes
+base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Ensure this matches your GitHub structure
 mapeo_de_casos = pd.read_excel(file_path)
 
 # Handle NaN values and round years
