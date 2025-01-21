@@ -96,7 +96,7 @@ for _, row in filtered_data.iterrows():
         <b>Año:</b> {row['Año de Inicio'] if row['Año de Inicio'] else 'N/A'}<br>
         <b>Descripción:</b> {row['Description'] if 'Description' in row else 'Sin descripción disponible'}<br>
         """
-        if 'Ficha Link' in row and pd.notna(row['Ficha Link']):
+        if pd.notna(row['Ficha Link']):
             popup_content += f"""<b><a href="{row['Ficha Link']}" target="_blank">Ficha técnica</a></b>"""
         
         folium.Marker(
