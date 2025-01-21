@@ -10,7 +10,7 @@ from streamlit_folium import folium_static
 
 # Load data
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
-base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Use 'raw' to link directly to the files
+base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Ensure 'raw' is used for direct file links
 mapeo_de_casos = pd.read_excel(file_path)
 
 # Complete mapping of initiatives to fichas
@@ -44,6 +44,10 @@ mapeo_de_casos['Ficha'] = mapeo_de_casos['Nombre'].map(initiative_to_ficha)
 mapeo_de_casos['Ficha Link'] = mapeo_de_casos['Ficha'].apply(
     lambda x: f"{base_url}Ficha%20-%20{x}.pdf" if pd.notna(x) else None
 )
+
+# Debugging: Display mapped Ficha Links in the app
+st.subheader("Debugging: Mapped Ficha Links")
+st.write(mapeo_de_casos[['Nombre', 'Ficha', 'Ficha Link']])
 
 # Handle NaN values and round years
 if 'Año de Inicio' in mapeo_de_casos.columns:
