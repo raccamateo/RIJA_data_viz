@@ -4,29 +4,52 @@ from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
 import streamlit as st
 
+# Streamlit page configuration
+st.set_page_config(layout="wide", page_title="Mapa Interactivo de Iniciativas", page_icon="🌍")
+
 # Load data
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
-base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Ensure this matches your GitHub repository structure
+base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Use 'raw' to link directly to the files
 mapeo_de_casos = pd.read_excel(file_path)
 
-# Check and display column names to avoid KeyError
-st.write("Columnas disponibles en el archivo:", mapeo_de_casos.columns)
+# Complete mapping of initiatives to fichas
+initiative_to_ficha = {
+    "Capacitación en DDHH": "Capacitaciones Especializadas",
+    "Reforma Judicial 2022": "Fortalecimiento Institucional",
+    "Acceso a la Justicia para Todos": "Acceso Universal a la Justicia",
+    "Mejoras en el Sistema Penal": "Modernización del Sistema Penal",
+    "Digitalización de Expedientes": "Transformación Digital",
+    "Capacitación en Género": "Capacitaciones Especializadas",
+    "Justicia Comunitaria en Acción": "Justicia Comunitaria",
+    "Protección de los Derechos de los Niños": "Derechos de los Niños",
+    "Fortalecimiento de la Mediación": "Mediación y Resolución de Conflictos",
+    "Iniciativa de Acceso Inclusivo": "Acceso Inclusivo",
+    "Reformas Penales Modernas": "Modernización del Sistema Penal",
+    "Digitalización Judicial 2021": "Transformación Digital",
+    "Descentralización de Servicios Legales": "Justicia Comunitaria",
+    "Fortalecimiento del Estado de Derecho": "Fortalecimiento Institucional",
+    "Acceso a Justicia en Zonas Rurales": "Acceso Universal a la Justicia",
+    "Capacitación sobre Ley de Género": "Capacitaciones Especializadas",
+    "Desarrollo de Centros de Mediación": "Mediación y Resolución de Conflictos",
+    "Programas para Protección Infantil": "Derechos de los Niños",
+    "Capacitación en Resolución de Conflictos": "Capacitaciones Especializadas",
+    "Acceso Digital a Expedientes": "Transformación Digital",
+    "Reforma Legal Transparente": "Fortalecimiento Institucional",
+    "Participación Ciudadana en Reformas": "Acceso Inclusivo",
+}
+
+# Map initiatives to fichas
+mapeo_de_casos['Ficha'] = mapeo_de_casos['Nombre'].map(initiative_to_ficha)
+mapeo_de_casos['Ficha Link'] = mapeo_de_casos['Ficha'].apply(
+    lambda x: f"{base_url}Ficha%20-%20{x}.pdf" if pd.notna(x) else None
+)
 
 # Handle NaN values and round years
 if 'Año de Inicio' in mapeo_de_casos.columns:
     mapeo_de_casos['Año de Inicio'] = mapeo_de_casos['Año de Inicio'].fillna(0).round(0).astype(int)
     mapeo_de_casos.loc[mapeo_de_casos['Año de Inicio'] == 0, 'Año de Inicio'] = None  # Replace 0 with None for clarity
 
-# Ensure the column for Ficha Técnica exists
-if 'Ficha' in mapeo_de_casos.columns:
-    mapeo_de_casos['Ficha Link'] = mapeo_de_casos['Ficha'].apply(
-        lambda x: f"{base_url}FICHA - {x}.pdf" if pd.notna(x) else None
-    )
-else:
-    st.error("La columna 'Ficha' no existe en el archivo. Verifica el nombre de la columna correspondiente.")
-
 # Streamlit layout
-st.set_page_config(layout="wide")
 st.title("Mapa Interactivo de Iniciativas Ciudadanas")
 
 # Filters
