@@ -6,18 +6,24 @@ import streamlit as st
 
 # Load data
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
-base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Ensure this matches your GitHub structure
+base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Ensure this matches your GitHub repository structure
 mapeo_de_casos = pd.read_excel(file_path)
+
+# Check and display column names to avoid KeyError
+st.write("Columnas disponibles en el archivo:", mapeo_de_casos.columns)
 
 # Handle NaN values and round years
 if 'Año de Inicio' in mapeo_de_casos.columns:
     mapeo_de_casos['Año de Inicio'] = mapeo_de_casos['Año de Inicio'].fillna(0).round(0).astype(int)
     mapeo_de_casos.loc[mapeo_de_casos['Año de Inicio'] == 0, 'Año de Inicio'] = None  # Replace 0 with None for clarity
 
-# Add links to fichas
-mapeo_de_casos['Ficha Link'] = mapeo_de_casos['Ficha'].apply(
-    lambda x: f"{base_url}FICHA - {x}.pdf" if pd.notna(x) else None
-)
+# Ensure the column for Ficha Técnica exists
+if 'Ficha' in mapeo_de_casos.columns:
+    mapeo_de_casos['Ficha Link'] = mapeo_de_casos['Ficha'].apply(
+        lambda x: f"{base_url}FICHA - {x}.pdf" if pd.notna(x) else None
+    )
+else:
+    st.error("La columna 'Ficha' no existe en el archivo. Verifica el nombre de la columna correspondiente.")
 
 # Streamlit layout
 st.set_page_config(layout="wide")
@@ -65,8 +71,10 @@ for _, row in filtered_data.iterrows():
         <b>Impulsores:</b> {row['Impulsores']}<br>
         <b>Año:</b> {row['Año de Inicio'] if row['Año de Inicio'] else 'N/A'}<br>
         <b>Descripción:</b> {row['Description'] if 'Description' in row else 'Sin descripción disponible'}<br>
-        <b><a href="{row['Ficha Link']}" target="_blank">Ficha técnica</a></b>
         """
+        if 'Ficha Link' in row and pd.notna(row['Ficha Link']):
+            popup_content += f"""<b><a href="{row['Ficha Link']}" target="_blank">Ficha técnica</a></b>"""
+        
         folium.Marker(
             location=[row['Latitude'], row['Longitude']],
             popup=folium.Popup(popup_content, max_width=300),
