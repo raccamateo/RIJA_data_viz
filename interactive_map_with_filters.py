@@ -10,10 +10,10 @@ from streamlit_folium import folium_static
 
 # Load data
 file_path = 'Mapeo_de_Casos_With_Coordinates.xlsx'
-base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Ensure 'raw' for direct links
+base_url = 'https://github.com/raccamateo/RIJA_data_viz/raw/main/'  # Link to the GitHub repository
 mapeo_de_casos = pd.read_excel(file_path)
 
-# Map initiatives to ficha tecnica
+# Mapping initiatives to ficha tecnica
 initiative_to_ficha = {
     "Capacitación en DDHH": "Capacitaciones Especializadas",
     "Reforma Judicial 2022": "Fortalecimiento Institucional",
@@ -42,17 +42,17 @@ initiative_to_ficha = {
 # Generate links for Ficha Técnica
 mapeo_de_casos['Ficha'] = mapeo_de_casos['Nombre'].map(initiative_to_ficha)
 mapeo_de_casos['Ficha Link'] = mapeo_de_casos['Ficha'].apply(
-    lambda x: f"{base_url}Ficha%20-%20{x}.pdf" if pd.notna(x) else None
+    lambda x: f"{base_url}Ficha%20-%20{x.replace(' ', '%20')}.pdf" if pd.notna(x) else None
 )
 
-# Debugging: Display mapped Ficha Links in the app
-st.subheader("Debugging: Mapped Ficha Links")
+# Debugging: Check generated links
+st.subheader("Debugging: Generated Links")
 st.write(mapeo_de_casos[['Nombre', 'Ficha', 'Ficha Link']])
 
 # Handle NaN values and round years
 if 'Año de Inicio' in mapeo_de_casos.columns:
     mapeo_de_casos['Año de Inicio'] = mapeo_de_casos['Año de Inicio'].fillna(0).round(0).astype(int)
-    mapeo_de_casos.loc[mapeo_de_casos['Año de Inicio'] == 0, 'Año de Inicio'] = None  # Replace 0 with None for clarity
+    mapeo_de_casos.loc[mapeo_de_casos['Año de Inicio'] == 0, 'Año de Inicio'] = None
 
 # Streamlit layout
 st.title("Mapa Interactivo de Iniciativas Ciudadanas")
@@ -84,7 +84,7 @@ if not filtered_data.empty:
     map_bounds = [[filtered_data['Latitude'].min(), filtered_data['Longitude'].min()],
                   [filtered_data['Latitude'].max(), filtered_data['Longitude'].max()]]
 else:
-    map_bounds = [[-90, -180], [90, 180]]  # Default bounds
+    map_bounds = [[-90, -180], [90, 180]]
 
 # Create map
 m = folium.Map(location=[0, 0], zoom_start=2, tiles="CartoDB positron", scrollWheelZoom=True, max_bounds=True)
